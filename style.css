@@ -1,0 +1,185 @@
+.left {
+	float: left;
+	height: 100%;
+	width: 40%;
+}
+
+.names {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin: 20px;
+}
+
+.outer_circle {
+	position: relative;
+	border: 1px solid #334FAF;
+	border-radius: 50%;
+	height: 230px;
+	width: 230px;
+	background-color: white;
+	margin-top: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.inner_circle {
+	background-color: #334FAF;
+	border-radius: 50%;
+	position: absolute;
+	height: 200px;
+	width: 200px;
+}
+
+.name-list {
+	margin-top: 30px;
+	width: 300px;
+	text-align: center;
+}
+
+.first_name {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 50px;
+}
+
+.second_name {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 57px;
+	font-weight: bold;
+	line-height: 45px;
+}
+
+.vacancy {
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 60px;
+	font-size: 23px;
+	font-weight: bold;
+}
+
+.profile {
+	margin-left: 52px;
+	margin-top: 58px;
+}
+
+.flex_profile {
+	display: flex;
+	align-items: center;
+	width: 86%;
+}
+
+.outer_circle_small {
+	position: relative;
+	border: 1px solid #334FAF;
+	border-radius: 50%;
+	height: 71px;
+	width: 71px;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.inner_circle_small {
+	background-color: #334FAF;
+	border-radius: 50%;
+	position: absolute;
+	height: 65px;
+	width: 65px;
+}
+
+#profile {
+	display: inline;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 38px;
+	font-weight: bold;
+	color: #334FAF;
+	margin-left: 10px;
+}
+
+.line {
+	background-color: #334FAF;
+	height: 5px;
+	flex-grow: 1;
+}
+
+.text_profile {
+	margin-top: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	text-align: left;
+	width: 86%;
+	height: 250px;
+	line-height: 17px;
+}
+
+.contact {
+	margin-left: 52px;
+	margin-top: 34px;
+}
+
+.contact_info {
+	margin-top: 35px;
+}
+
+.contact_info > div {
+	height: 55px;
+}
+
+.info_name {
+	float: left;
+	color: #334FAF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 19px;
+	font-weight: bold;
+	width: 130px;
+}
+
+.info_name + span {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 19px;
+}
+
+.skills {
+	margin-left: 52px;
+	margin-top: 10px;
+}
+
+.skills_level {
+	margin-top: 28px;
+	margin-right: 55px;
+}
+
+.skills_block {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.skill_name {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 23px;
+}
+
+ul {
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	width: 330px;
+}
+
+li {
+	display: inline-block;
+	background-color: #334FAF;
+	border-radius: 50%;
+	height: 18px;
+	width: 18px;
+}
+
+li.empty {
+	display: inline-block;
+	background-color: #838383;
+	border-radius: 50%;
+	height: 18px;
+	width: 18px;
+}
