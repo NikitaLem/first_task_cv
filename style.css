@@ -1,5 +1,4 @@
 body {
-	width: 2480px;
 	margin: 0;
 	padding: 0;
 }
@@ -342,11 +341,11 @@ li.empty {
 	margin-left: 4px;
 }
 
-.right .education:last-child {
+.right > div.education:nth-child(2) {
 	margin-top: 104px;
 }
 
-.right .education:last-child .outer_circle_small {
+.right > div.education:nth-child(2) .outer_circle_small {
 	position: relative;
 	border: 2px solid #3d6cb0;
 	border-radius: 50%;
@@ -358,7 +357,7 @@ li.empty {
 	justify-content: center;
 }
 
-.right .education:last-child .inner_circle_small {
+.right > div.education:nth-child(2) .inner_circle_small {
 	background-color: #3d6cb0;
 	border-radius: 50%;
 	position: absolute;
@@ -366,17 +365,104 @@ li.empty {
 	width: 137px;
 }
 
-.right .education:last-child .block_list span {
+.right > div.education:nth-child(2) span {
 	color: black;
 }
 
-.right .education:last-child .block_list span:nth-child(3) {
+.right > div.education:nth-child(2) .block_list span:nth-child(3) {
 	color: black;
 	width: 500px;
 }
 
 .right .education:last-child .flex_master1 {
 	margin-top: 94px;
+}
+
+.experience_block {
+	margin-top: 90px;
+}
+
+.software {
+	margin-left: 110px;
+	margin-top: 110px;
+}
+
+.software .line {
+	background-color: #3d6cb0;
+	height: 10px;
+	flex-grow: 1;
+	margin-left: 60px;
+	margin-bottom: -8px;
+}
+
+.flex_box {
+	display: flex;
+	margin-top: 60px;
+	margin-left: 10px;
+}
+
+.flex_right {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	flex-basis: 50%;
+}
+
+.name_soft {
+	font-family: "MyriadPro Regular";
+	font-size: 51.44px;
+}
+
+.level_soft {
+	display: flex;
+	flex-wrap: nowrap;
+	padding-top: 29px;
+	padding-bottom: 40px;
+	width: 554px;
+}
+
+span.full {
+	display: inline-block;
+	height: 43px;
+	background-color: #3d6cb0;
+}
+
+.flex_right > div:nth-child(1) span.full {
+	width: 504px;
+}
+
+.flex_right > div:nth-child(2) span.full {
+	width: 390px;
+}
+
+.flex_right > div:nth-child(3) span.full {
+	width: 311px;
+}
+
+.flex_left > div:nth-child(1) span.full {
+	width: 459px;
+}
+
+.flex_left > div:nth-child(2) span.full {
+	width: 341px;
+}
+
+.flex_left > div:nth-child(3) span.full {
+	width: 504px;
+}
+
+span.empty {
+	display: inline-block;
+	flex-grow: 1;
+	height: 43px;
+	background-color: #e6e6e6;
+}
+
+.flex_left {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	flex-basis: 50%;
 }
 
 @font-face {
