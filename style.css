@@ -38,6 +38,12 @@ body {
 	width: 404px;
 }
 
+.inner_circle:hover {
+	background-color: #F97717;
+	cursor: pointer;
+	content: 'CLICK';
+}
+
 .name-list {
 	margin-top: 48px;
 	width: 700px;

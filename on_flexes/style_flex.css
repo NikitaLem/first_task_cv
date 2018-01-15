@@ -1,0 +1,350 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.left {
+    flex-basis: 40%;
+}
+
+.right {
+    flex-basis: 60%;
+}
+
+.name_block {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+.outer_circle {
+	position: relative;
+	border: 2px solid #3d6cb0;
+	border-radius: 50%;
+	height: 200px;
+	width: 200px;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.inner_circle {
+	background-color: #3d6cb0;
+	border-radius: 50%;
+	position: absolute;
+	height: 180px;
+	width: 180px;
+}
+
+.name-list {
+    text-align: center;
+    padding-top: 5%;
+}
+
+.first_name {
+	font-family: 'Myriad Pro Light SemiExtended';
+	font-size: 50px;
+}
+
+.second_name {
+	font-family: "MyriadPro Bold";
+	font-size: 58px;
+	line-height: 0.7;
+}
+
+.vacancy {
+	font-family: 'MyriadPro BlackSemiCn';
+    font-size: 25px;
+    padding-top: 5%;
+}
+
+.profile,
+.contact,
+.skills {
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.flex_for_head_of_block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile .outer_circle,
+.contact .outer_circle,
+.skills .outer_circle,
+.education .outer_circle,
+.experience .outer_circle,
+.software .outer_circle {
+    height: 100px;
+    width: 100px;
+}
+
+.profile .inner_circle,
+.contact .inner_circle,
+.skills .inner_circle,
+.education .inner_circle,
+.experience .inner_circle,
+.software .inner_circle {
+    height: 90px;
+    width: 90px;
+}
+
+.profile span,
+.contact span,
+.skills span,
+.education .flex_for_head_of_block span,
+.experience .flex_for_head_of_block span,
+.software span {
+	font-family: "MyriadPro Bold";
+	font-size: 42px;
+    color: #3d6cb0;
+    padding-left: 15px;
+}
+
+.profile .line,
+.contact .line,
+.skills .line,
+.education .line,
+.experience .line,
+.software .line {
+    margin: 0 10px;
+    height: 7px;
+    flex-grow: 1;
+    background-color: #3d6cb0;
+}
+
+.text {
+	font-family: Myriad Pro;
+	font-size: 16px;
+    text-align: left;
+}
+
+.profile .text {
+    margin-top: 20px;
+}
+
+.contact_wrapper > div {
+    display: flex;
+    padding-top: 35px;
+}
+
+.contact_name {
+	color: #3d6cb0;
+	font-family: "MyriadPro Bold";
+	font-size: 25px;
+    flex-basis: 30%;
+}
+
+.contact_name + div {
+    flex-basis: 70%;
+    font-family: "MyriadPro Regular";
+	font-size: 25px;
+}
+
+.skills_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.skills_name {
+    text-align: center;
+    font-family: "MyriadPro Regular";
+    font-size: 20px;
+}
+
+.skills ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.skills li {
+    display: inline-block;
+    margin: 20px 5px 20px 5px;
+    background-color: #3d6cb0;
+	border-radius: 50%;
+	height: 18px;
+    width: 18px;
+}
+
+.skills li.empty {
+    background-color: #e6e6e6;
+    
+}
+
+.education {
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+.education_wrapper {
+    display: flex;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.flex_for_head_of_block + .education_wrapper {
+    margin-top: 5%;
+}
+
+.dot {
+    flex-shrink: 0;
+	height: 22px;
+	width: 22px;
+	border-radius: 50%;
+	background-color: black;
+}
+
+.inner_wrapper {
+    margin-left: 3%;
+}
+
+.education .span_block,
+.experience .span_block {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.education .span_block span,
+.experience .span_block span {
+    font-family: "MyriadPro Regular";
+    font-size: 25px;
+    padding-bottom: 1px;
+}
+
+.education .span_block span:nth-child(1) {
+    flex-basis: 32%;
+    font-family: "MyriadPro Bold";
+	color: #3d6cb0; 
+}
+
+.education .span_block span:nth-child(2),
+.experience .span_block span:nth-child(2) {
+    flex-basis: 40%;
+}
+
+.education .span_block span:nth-child(3),
+.experience .span_block span:nth-child(3) {
+    flex-basis: 50%;
+}
+
+.education .text,
+.experience .text {
+    margin-top: 1%;
+}
+
+.experience,
+.software {
+    margin-left: 10%;
+    margin-top: 6%;
+}
+
+.experience .span_block span:nth-child(1) {
+    flex-basis: 32%;
+    font-family: "MyriadPro Bold";
+}
+
+.software_wrapper {
+    display: flex;
+}
+
+.flex_left {
+    flex-basis: 50%;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.flex_right {
+    flex-basis: 50%;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.software_name {
+    font-family: "MyriadPro Regular";
+    font-size: 20px;
+    padding: 5% 0;
+}
+
+.software_level {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 80%;
+}
+
+.software span {
+    display: inline-block;
+	height: 15px;
+}
+
+.software .full {
+	background-color: #3d6cb0;
+}
+
+.software .empty {
+	flex-grow: 1;
+	background-color: #e6e6e6;
+}
+
+.software .flex_left > div:nth-child(1) .full {
+    width: 95%;
+}
+
+.software .flex_left > div:nth-child(2) .full {
+    width: 70%;
+}
+
+.software .flex_left > div:nth-child(3) .full {
+    width: 50%;
+}
+
+.software .flex_right > div:nth-child(1) .full {
+    width: 85%;
+}
+
+.software .flex_right > div:nth-child(2) .full {
+    width: 60%;
+}
+
+.software .flex_right > div:nth-child(3) .full {
+    width: 95%;
+}
+
+@font-face {
+    font-family: "Myriad Pro Light SemiExtended";  
+    src: url("../fonts/Myraid Pro/Myriad Pro Light SemiExtended.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+}
+    
+@font-face {
+    font-family: "MyriadPro Bold";  
+    src: url("../fonts/Myraid Pro/MyriadPro Bold.otf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "MyriadPro BlackSemiCn";  
+    src: url("../fonts/Myraid Pro/MyriadPro BlackSemiCn.otf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+}
+    
+@font-face {
+    font-family: "MyriadPro Regular";  
+    src: url("../fonts/Myraid Pro/MyriadPro Regular.otf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+}
