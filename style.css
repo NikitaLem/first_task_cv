@@ -1,6 +1,10 @@
+html {
+    font-size: 5px;
+}
+
 @media screen and (max-width: 640px) {
     html {
-        font-size: 2px;
+        font-size: 4px;
     }
 
     .wrapper {
@@ -14,10 +18,6 @@
     .right {
         flex-basis: 100%;
     }
-}
-
-html {
-    font-size: 5px;
 }
 
 body {
