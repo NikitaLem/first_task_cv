@@ -1,12 +1,10 @@
 @media screen and (max-width: 640px) {
-.wrapper {
+    .wrapper {
         flex-direction: column;
     }
-
     .left {
         flex-basis: 100%;
     }
-
     .right {
         flex-basis: 100%;
     }
@@ -22,15 +20,24 @@ body {
     margin-bottom: 7.7vw;
 }
 
+.space_row_1 {
+    flex-basis: 5.24vw;
+}
+
+.space_row_2 {
+    flex-basis: 6.49vw;
+}
+
+.space_row_3 {
+    flex-basis: 4.637vw;
+}
+
 .left {
-    flex-basis: 44.35%;
-    margin-left: 4.96%;
+    flex-basis: 32.98vw;
 }
 
 .right {
-    flex-basis: 55.65%;
-    padding-right: 4.6%;
-    margin-left: 7%;
+    flex-basis: 50.65vw;
 }
 
 .name_block {
@@ -164,7 +171,7 @@ body {
 }
 
 .contact_wrapper > div:nth-child(1) {
-    margin-top: 3.1vw;
+    margin-top: 3.0645vw;
 }
 
 .contact_name {
