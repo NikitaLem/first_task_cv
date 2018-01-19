@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -113,6 +117,48 @@ body {
 .software .inner_circle {
     height: 5.12vw;
     width: 5.12vw;
+}
+
+.profile .inner_circle {
+    background-image: url("images/Profile_img.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 60% auto;
+}
+
+.contact .inner_circle {
+    background-image: url("images/Contact_img.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 65% auto;
+}
+
+.skills .inner_circle {
+    background-image: url("images/Skills_img.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 50% auto;
+}
+
+.education .inner_circle {
+    background-image: url("images/Education_img.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 75% auto;
+}
+
+.experience .inner_circle {
+    background-image: url("images/Experience_img.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 65% auto;
+}
+
+.software .inner_circle {
+    background-image: url("images/Software_img.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 75% auto;
 }
 
 .profile span,
