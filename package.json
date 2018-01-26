@@ -1,0 +1,26 @@
+{
+    "name": "first_task_cv",
+    "version": "1.0.0",
+    "description": "First Task CV webpack",
+    "scripts": {
+        "build": "webpack -p",
+        "watch": "webpack --watch",
+        "dev": "webpack -d --watch"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "moment": "^2.20.1",
+        "pug-html-loader": "^1.1.5"
+    },
+    "devDependencies": {
+        "css-loader": "^0.28.9",
+        "file-loader": "^1.1.6",
+        "html-webpack-plugin": "^2.30.1",
+        "style-loader": "^0.19.1",
+        "stylus": "^0.54.5",
+        "stylus-loader": "^3.0.1",
+        "url-loader": "^0.6.2",
+        "webpack": "^2.7.0"
+    }
+}
