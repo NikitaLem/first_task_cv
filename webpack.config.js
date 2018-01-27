@@ -5,13 +5,17 @@ module.exports = {
     entry: './src/assets/js/index.js',
     output: {
         filename: 'bundle.js',
-        path: path.resolve(__dirname, 'docs')
+        path: path.resolve(__dirname, 'dist')
     },
     module: {
         rules: [
             {
                 test: /\.styl$/, 
                 use: ['style-loader', 'css-loader', 'stylus-loader']
+            },
+            {
+                test: /\.pug$/,
+                use: ['raw-loader', 'pug-html-loader']
             },
             {
                 test: /\.(woff(2)?|ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,    //to support @font-face rule 
@@ -32,6 +36,12 @@ module.exports = {
             }
         ]
     },
+    devServer: {
+        contentBase: path.join(__dirname, "dist"),
+        compress: true,
+        open: true,
+        stats: "errors-only"
+    },
     plugins: [
         new HtmlWebpackPlugin({
             title: 'For Lera',
@@ -39,7 +49,7 @@ module.exports = {
                 collapseWhitespace: true
             },
             hash: true,
-            template: 'src/index.html',
+            template: 'src/index.pug',
         })
         ]
 };
