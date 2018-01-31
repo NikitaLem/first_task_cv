@@ -1,374 +1,384 @@
-*
-  box-sizing border-box
+$header
+    display flex
+    align-items center
+    justify-content space-between
 
-body
-  padding 0
-  margin 0
-
-.wrapper
-  display flex
-  margin-bottom 7.7vw
-
-.space_row_1
-  flex-basis 5.24vw
-
-.space_row_2
-  flex-basis 6.49vw
-
-.space_row_3
-  flex-basis 4.637vw
-
-.left
-  flex-basis 32.98vw
-
-.right
-  flex-basis 50.65vw
-
-.name_block
-  display flex
-  align-items center
-  flex-direction column
-  margin-top 8.3vw
-
-.inner_circle
-  flex-shrink 0
-  background-color #3d6cb0
-  border-radius 50%
-  position relative
-  height 16.33vw
-  width 16.33vw
-  &:before
-    content " "
-    position absolute
-    z-index 1
-    top -7%
-    left -7%
-    right -7%
-    bottom -7%
-    border 1px solid #3d6cb0
+$circles
+    flex-shrink 0
+    background-color #3d6cb0
     border-radius 50%
-
-.name-list
-  text-align center
-  margin-top 4.27vw
-
-.first_name
-  font-family 'Myriad Pro Light SemiExtended'
-  font-size 4.21vw
-  line-height 0.71
-
-.second_name
-  font-family "MyriadPro Bold"
-  font-size 4.98vw
-  line-height 0.71
-  margin-top 1.169vw
-
-.vacancy
-  font-family 'MyriadPro BlackSemiCn'
-  font-size 2vw
-  margin-top 1.85vw
-  line-height 0.71
-
-.profile
-  margin-top 6.935vw
-  .inner_circle
-    background-image url("../images/Profile_img.png")
+    position relative                                          
     background-repeat no-repeat
     background-position 50% 50%
     background-size 60% auto
-  .text
-    margin-top 1.45vw
+    height 5.12vw
+    width 5.12vw
 
-.flex_for_head_of_block
-  display flex
-  align-items center
-  justify-content space-between
-  & + .education_wrapper
-    margin-top 2.9vw
-  & + .experience_wrapper
-    margin-top 4.15vw
-
-.profile .inner_circle:before,
-.contact .inner_circle:before,
-.skills .inner_circle:before,
-.education .inner_circle:before,
-.experience .inner_circle:before,
-.software .inner_circle:before
-  top -6%
-  left -6%
-  right -6%
-  bottom -6%
-  border-width 1px
-
-.profile .inner_circle,
-.contact .inner_circle,
-.skills .inner_circle,
-.education .inner_circle,
-.experience .inner_circle,
-.software .inner_circle
-  height 5.12vw
-  width 5.12vw
-
-.contact
-  margin-top 4.153vw
-  .inner_circle
-    background-image url("../images/Contact_img.png")
-    background-repeat no-repeat
-    background-position 50% 50%
-    background-size 65% auto
-
-.skills
-  margin-top 4.31vw
-  .inner_circle
-    background-image url("../images/Skills_img.png")
-    background-repeat no-repeat
-    background-position 50% 50%
-    background-size 50% auto
-  ul
-    display flex
-    justify-content space-between
-    margin 0
-    padding 0
-    width 25.89vw
-  li
-    display inline-block
-    background-color #3d6cb0
+$circles_before
+    top -6%
+    left -6%
+    right -6%
+    bottom -6%
+    border-width 1px
+    content " "
+    position absolute
+    z-index 1
+    border 1px solid #3d6cb0
     border-radius 50%
-    height 1.41vw
-    width 1.41vw
-    &.empty
-      background-color #e6e6e6
 
-.education
-  margin-top 6.45vw
-  .inner_circle
-    background-image url("../images/Education_img.png")
-    background-repeat no-repeat
-    background-position 50% 50%
-    background-size 75% auto
-  .span_block
-    span
-      &:nth-child(1)
-        font-family "MyriadPro Bold"
-        color #3d6cb0
+$header_names
+    font-family "MyriadPro Bold"
+    font-size 3.32vw
+    color #3d6cb0
+    padding-left 15px
 
-.experience
-  margin-top 4.8vw
-  .inner_circle
-    background-image url("../images/Experience_img.png")
-    background-repeat no-repeat
-    background-position 50% 50%
-    background-size 65% auto
-  .span_block
-    span
-      &:nth-child(1)
-        font-family "MyriadPro Bold"
-
-.software
-  margin-top 4.8vw
-  .inner_circle
-    background-image url("../images/Software_img.png")
-    background-repeat no-repeat
-    background-position 50% 50%
-    background-size 75% auto
-  .software_wrapper
-    span
-      display inline-block
-      height 1.77vw
-  .full
-    background-color #3d6cb0
-  .empty
+$header_lines
+    margin 0 0 0 10px
+    height 0.4vw
     flex-grow 1
-    background-color #e6e6e6
-  .flex_left
-    & > div
-      &:nth-child(1)
-        .full
-          width 95%
-      &:nth-child(2)
-        .full
-          width 70%
-      &:nth-child(3)
-        .full
-          width 50%
-  .flex_right
-    & > div
-      &:nth-child(1)
-        .full
-          width 85%
-      &:nth-child(2)
-        .full
-          width 60%
-      &:nth-child(3)
-        .full
-          width 95%
-
-.profile span,
-.contact span,
-.skills span,
-.education .flex_for_head_of_block span,
-.experience .flex_for_head_of_block span,
-.software .flex_for_head_of_block span
-  font-family "MyriadPro Bold"
-  font-size 3.32vw
-  color #3d6cb0
-  padding-left 15px
-
-.profile .line,
-.contact .line,
-.skills .line,
-.education .line,
-.experience .line,
-.software .line
-  margin 0 0 0 10px
-  height 0.4vw
-  flex-grow 1
-  background-color #3d6cb0
-
-.text
-  font-family 'MyriadPro Regular'
-  font-size 1.24vw
-  text-align left
-
-.contact_wrapper
-  & > div
-    display flex
-    margin-top 2.98vw
-    &:nth-child(1)
-      margin-top 3.0645vw
-
-.contact_name
-  color #3d6cb0
-  font-family "MyriadPro Bold"
-  font-size 1.66vw
-  flex-basis 30%
-  & + div
-    flex-basis 70%
+    background-color #3d6cb0
+$textes
     font-family 'MyriadPro Regular'
-    font-size 1.66vw
+    font-size 1.24vw
+    text-align left
+$software_level
+    display inline-block
+    height 1.77vw
 
-.skills_wrapper
-  display flex
-  flex-direction column
-  align-items center
-  & > div
-    margin-top 1.81vw
-    &:nth-child(1)
-      margin-top 2.34vw
+*
+    box-sizing border-box
+body
+    padding 0
+    margin 0
+.wrapper
+    display flex
+    margin-bottom 7.7vw
+.space-left
+    flex-basis 5.24vw
+.left
+    flex-basis 32.98vw
+.names
+    display flex
+    align-items center
+    flex-direction column
+    margin-top 8.3vw
+    &__circle
+        flex-shrink 0
+        background-color #3d6cb0
+        border-radius 50%
+        position relative
+        height 16.33vw
+        width 16.33vw
+        &:before
+            content " "
+            position absolute
+            z-index 1
+            top -7%
+            left -7%
+            right -7%
+            bottom -7%
+            border 1px solid #3d6cb0
+            border-radius 50%
+    &__list
+        text-align center
+        margin-top 4.27vw
+        &__first
+            font-family 'Myriad Pro Light SemiExtended'
+            font-size 4.21vw
+            line-height 0.71
+        &__second
+            font-family "MyriadPro Bold"
+            font-size 4.98vw
+            line-height 0.71
+            margin-top 1.169vw
+        &__vacancy
+            font-family 'MyriadPro BlackSemiCn'
+            font-size 2vw
+            margin-top 1.85vw
+            line-height 0.71
+.profile
+    margin-top 6.935vw
+    &__header
+        @extends $header
+        &__circle
+            @extends $circles
+            background-image url("../images/Profile_img.png")
+            &:before
+                @extends $circles_before
+        &__name
+            @extends $header_names
+        &__line
+            @extends $header_lines
+    &__text
+        @extends $textes
+        margin-top 1.45vw
+.contact
+    margin-top 4.153vw
+    &__header
+        @extends $header
+        &__circle
+            @extends $circles
+            background-image url("../images/Contact_img.png")
+            &:before
+                @extends $circles_before
+        &__name
+            @extends $header_names
+        &__line
+            @extends $header_lines
+    &__wrapper
+        display flex
+        margin-top 2.98vw
+        &__name
+            color #3d6cb0
+            font-family "MyriadPro Bold"
+            font-size 1.66vw
+            flex-basis 30%
+        &__value
+            flex-basis 70%
+            font-family 'MyriadPro Regular'
+            font-size 1.66vw
+    &__wrapper_first
+        display flex
+        margin-top 3.0645vw
+.skills
+    margin-top 4.31vw
+    &__header
+        @extends $header
+        &__circle
+            @extends $circles
+            background-image url("../images/Skills_img.png")
+            &:before
+                @extends $circles_before
+        &__name
+            @extends $header_names
+        &__line
+            @extends $header_lines
+    &__body
+        display flex
+        flex-direction column
+        align-items center
+        &__block
+            margin-top 1.81vw
+            &__name
+                text-align center
+                font-family 'MyriadPro Regular'
+                font-size 2.07vw
+                padding-bottom 0.887vw
+            &__value
+                display flex
+                justify-content space-between
+                margin 0
+                padding 0
+                width 25.89vw
+                &__circle
+                    border-radius 50%
+                    height 1.41vw
+                    width 1.41vw
+                    background-color #3d6cb0
+                &__circle_empty
+                    @extends .skills__body__block__value__circle
+                    background-color #e6e6e6
+        &__block:first-child
+            margin-top 2.34vw
+.space-middle
+    flex-basis 6.49vw
+.right
+    flex-basis 50.65vw
+    .education
+        margin-top 6.45vw
+        &__header
+            @extends $header
+            &__circle
+                @extends $circles
+                background-image url("../images/Education_img.png")
+                &:before
+                    @extends $circles_before
+            &__name
+                @extends $header_names
+            &__line
+                @extends $header_lines
+        &__body
+            display flex
+            margin-left 0.62vw
+            margin-top 1.4vw
+            &__dot
+                flex-shrink 0
+                height 1.612vw
+                width 1.612vw
+                border-radius 50%
+                background-color black
+            &__wrapper
+                margin-left 1.77vw
+                &__degree
+                    display flex
+                    flex-wrap wrap
+                    .level
+                        font-family "MyriadPro Bold"
+                        color #3d6cb0
+                        font-size 2.07vw
+                        line-height 2vw
+                    .date
+                        font-family 'MyriadPro Regular'
+                        margin-left 1.33vw
+                        font-size 2.07vw
+                        line-height 2vw
+                    .university
+                        font-family 'MyriadPro Regular'
+                        flex-basis 100%
+                        margin-top 0.8vw
+                        font-size 2.07vw
+                        line-height 2vw
+                &__text
+                    @extends $textes
+                    margin-top 0.8vw
+.education__header + .education__body
+                        margin-top 2.9vw
+    .experience
+        margin-top 4.8vw
+        &__header
+            @extends $header
+            &__circle
+                @extends $circles
+                background-image url("../images/Experience_img.png")
+                &:before
+                    @extends $circles_before
+            &__name
+                @extends $header_names
+            &__line
+                @extends $header_lines
+        &__body
+            display flex
+            margin-left 0.62vw
+            margin-top 1.4vw
+            &__dot
+                flex-shrink 0
+                height 1.612vw
+                width 1.612vw
+                border-radius 50%
+                background-color black
+            &__wrapper
+                margin-left 1.77vw
+                &__degree
+                    display flex
+                    flex-wrap wrap
+                    .level
+                        font-family 'MyriadPro Bold'
+                        font-size 2.07vw
+                        line-height 2vw
+                    .date
+                        font-family 'MyriadPro Regular'
+                        margin-left 1.33vw
+                        font-size 2.07vw
+                        line-height 2vw
+                    .university
+                        font-family 'MyriadPro Regular'
+                        flex-basis 100%
+                        margin-top 0.8vw
+                        font-size 2.07vw
+                        line-height 2vw
+                &__text
+                    @extends $textes
+                    margin-top 0.8vw
+    .software
+        margin-top 4.8vw
+        &__header
+            @extends $header
+            &__circle
+                @extends $circles
+                background-image url("../images/Software_img.png")
+                &:before
+                    @extends $circles_before
+            &__name
+                @extends $header_names
+            &__line
+                @extends $header_lines
+        &__body
+            display flex
+            justify-content space-between
+            margin-top 3.1vw
+            &__left,
+            &__right
+                flex-basis 22.3vw
+                justify-content start
+                flex-direction column
+                &__wrapper
+                    margin-top 2.21vw
+                    &__name
+                        font-family 'MyriadPro Regular'
+                        font-size 2.07vw
+                    &__level
+                        display flex
+                        flex-wrap nowrap
+                        margin-top 1.41vw
+                        .full_photoshop
+                            @extends $software_level
+                            background-color #3d6cb0
+                            width 95%
+                        .full_illustrator
+                            @extends $software_level
+                            background-color #3d6cb0
+                            width 70%
+                        .full_indesign
+                            @extends $software_level
+                            background-color #3d6cb0
+                            width 50%
+                        .full_dreamweaver
+                            @extends $software_level
+                            background-color #3d6cb0
+                            width 85%
+                        .full_aftereffects
+                            @extends $software_level
+                            background-color #3d6cb0
+                            width 60%
+                        .full_htmlcss
+                            @extends $software_level
+                            background-color #3d6cb0
+                            width 95%
+                        .empty
+                            @extends $software_level
+                            background-color #e6e6e6
+                            flex-grow 1
+.space-left
+    flex-basis 4.637vw
+                            
+            
 
-.skills_name
-  text-align center
-  font-family 'MyriadPro Regular'
-  font-size 2.07vw
-  padding-bottom 0.887vw
-
-.education_wrapper
-  display flex
-  margin-left 0.62vw
-  margin-top 1.4vw
-
-.experience_wrapper
-  display flex
-  margin-left 0.62vw
-  margin-top 1.4vw
-
-.dot
-  flex-shrink 0
-  height 1.612vw
-  width 1.612vw
-  border-radius 50%
-  background-color black
-
-.inner_wrapper
-  margin-left 1.77vw
-
-.education .span_block,
-.experience .span_block
-  display flex
-  flex-wrap wrap
-
-.education .span_block span,
-.experience .span_block span
-  font-family 'MyriadPro Regular'
-  font-size 2.07vw
-  line-height 2vw
-
-.education .span_block span:nth-child(2),
-.experience .span_block span:nth-child(2)
-  margin-left 1.33vw
-
-.education .span_block span:nth-child(3),
-.experience .span_block span:nth-child(3)
-  flex-basis 100%
-  margin-top 0.8vw
-
-.education .text,
-.experience .text
-  margin-top 0.8vw
-
-.software_wrapper
-  display flex
-  justify-content space-between
-  margin-top 2.9vw
-
-.flex_left
-  flex-basis 22.3vw
-  justify-content start
-  flex-direction column
-
-.flex_right
-  flex-basis 22.3vw
-  justify-content start
-  flex-direction column
-
-.software .flex_left > div,
-.software .flex_right > div
-  margin-top 2.21vw
-
-.software .flex_left > div:nth-child(1),
-.software .flex_right > div:nth-child(1)
-  margin-top 0
-
-.software_name
-  font-family 'MyriadPro Regular'
-  font-size 2.07vw
-
-.software_level
-  display flex
-  flex-wrap nowrap
-  margin-top 1.41vw
+.experience__header + .experience__body
+    margin-top 4.15vw
+.software .software__body__left > div:nth-child(1),
+.software .software__body__right > div:nth-child(1)
+    margin-top 0
+@font-face
+    font-family 'Myriad Pro Bold SemiExtended'
+    src url('../fonts/Myriad Pro Bold SemiExtended.eot')
+    src local('☺'), url('../fonts/Myriad Pro Bold SemiExtended.woff') format('woff'), url('../fonts/Myriad Pro Bold SemiExtended.ttf') format('truetype')
+    font-weight normal
+    font-style normal
 
 @font-face
-  font-family 'Myriad Pro Bold SemiExtended'
-  src url('../fonts/Myriad Pro Bold SemiExtended.eot')
-  src local('☺'), url('../fonts/Myriad Pro Bold SemiExtended.woff') format('woff'), url('../fonts/Myriad Pro Bold SemiExtended.ttf') format('truetype')
-  font-weight normal
-  font-style normal
+    font-family 'Myriad Pro Light SemiExtended'
+    src url('../fonts/Myriad Pro Light SemiExtended.eot')
+    src local('☺'), url('../fonts/Myriad Pro Light SemiExtended.woff') format('woff'), url('../fonts/Myriad Pro Light SemiExtended.ttf') format('truetype')
+    font-weight normal
+    font-style normal
 
 @font-face
-  font-family 'Myriad Pro Light SemiExtended'
-  src url('../fonts/Myriad Pro Light SemiExtended.eot')
-  src local('☺'), url('../fonts/Myriad Pro Light SemiExtended.woff') format('woff'), url('../fonts/Myriad Pro Light SemiExtended.ttf') format('truetype')
-  font-weight normal
-  font-style normal
+    font-family 'MyriadPro BlackSemiCn'
+    src url('../fonts/MyriadPro BlackSemiCn.eot')
+    src local('☺'), url('../fonts/MyriadPro BlackSemiCn.woff') format('woff'), url('../fonts/MyriadPro BlackSemiCn.ttf') format('truetype')
+    font-weight normal
+    font-style normal
 
 @font-face
-  font-family 'MyriadPro BlackSemiCn'
-  src url('../fonts/MyriadPro BlackSemiCn.eot')
-  src local('☺'), url('../fonts/MyriadPro BlackSemiCn.woff') format('woff'), url('../fonts/MyriadPro BlackSemiCn.ttf') format('truetype')
-  font-weight normal
-  font-style normal
+    font-family 'MyriadPro Bold'
+    src url('../fonts/MyriadPro Bold.eot')
+    src local('☺'), url('../fonts/MyriadPro Bold.woff') format('woff'), url('../fonts/MyriadPro Bold.ttf') format('truetype')
+    font-weight normal
+    font-style normal
 
 @font-face
-  font-family 'MyriadPro Bold'
-  src url('../fonts/MyriadPro Bold.eot')
-  src local('☺'), url('../fonts/MyriadPro Bold.woff') format('woff'), url('../fonts/MyriadPro Bold.ttf') format('truetype')
-  font-weight normal
-  font-style normal
-
-@font-face
-  font-family 'MyriadPro Regular'
-  src url('../fonts/MyriadPro Regular.eot')
-  src local('☺'), url('../fonts/MyriadPro Regular.woff') format('woff'), url('../fonts/MyriadPro Regular.ttf') format('truetype')
-  font-weight normal
-  font-style normal
+    font-family 'MyriadPro Regular'
+    src url('../fonts/MyriadPro Regular.eot')
+    src local('☺'), url('../fonts/MyriadPro Regular.woff') format('woff'), url('../fonts/MyriadPro Regular.ttf') format('truetype')
+    font-weight normal
+    font-style normal
