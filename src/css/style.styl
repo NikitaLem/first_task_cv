@@ -231,8 +231,8 @@ body
                 &__text
                     @extends $textes
                     margin-top 0.8vw
-.education__header + .education__body
-                        margin-top 2.9vw
+        &__body_first
+            margin-top 2.9vw
     .experience
         margin-top 4.8vw
         &__header
@@ -279,6 +279,8 @@ body
                 &__text
                     @extends $textes
                     margin-top 0.8vw
+        &__body_first
+            margin-top 4.15vw
     .software
         margin-top 4.8vw
         &__header
@@ -338,16 +340,11 @@ body
                             @extends $software_level
                             background-color #e6e6e6
                             flex-grow 1
+                    &_first
+                        margin-top 0
 .space-left
     flex-basis 4.637vw
                             
-            
-
-.experience__header + .experience__body
-    margin-top 4.15vw
-.software .software__body__left > div:nth-child(1),
-.software .software__body__right > div:nth-child(1)
-    margin-top 0
 @font-face
     font-family 'Myriad Pro Bold SemiExtended'
     src url('../fonts/Myriad Pro Bold SemiExtended.eot')
