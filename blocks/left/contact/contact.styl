@@ -1,0 +1,28 @@
+.contact
+    margin-top 4.153vw
+    &__header
+        @extends $header
+        &__circle
+            @extends $circles
+            background-image url("../src/images/Contact_img.png")
+            &:before
+                @extends $circles_before
+        &__name
+            @extends $header_names
+        &__line
+            @extends $header_lines
+    &__wrapper
+        display flex
+        margin-top 2.98vw
+        &__name
+            color #3d6cb0
+            font-family "MyriadPro Bold"
+            font-size 1.66vw
+            flex-basis 30%
+        &__value
+            flex-basis 70%
+            font-family 'MyriadPro Regular'
+            font-size 1.66vw
+    &__wrapper_first
+        display flex
+        margin-top 3.0645vw

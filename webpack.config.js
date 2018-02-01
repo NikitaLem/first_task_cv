@@ -49,7 +49,7 @@ module.exports = {
                 collapseWhitespace: true
             },
             hash: true,
-            template: 'src/index.pug',
+            template: 'blocks/index.pug',
         })
         ]
 };
