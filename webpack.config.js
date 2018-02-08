@@ -5,7 +5,7 @@ module.exports = {
     entry: './src/assets/js/index.js',
     output: {
         filename: 'bundle.js',
-        path: path.resolve(__dirname, 'docs')
+        path: path.resolve(__dirname, 'dist')
     },
     module: {
         rules: [
@@ -37,7 +37,7 @@ module.exports = {
         ]
     },
     devServer: {
-        contentBase: path.join(__dirname, "docs"),
+        contentBase: path.join(__dirname, "dist"),
         compress: true,
         open: true,
         stats: "errors-only"
@@ -49,7 +49,7 @@ module.exports = {
                 collapseWhitespace: true
             },
             hash: true,
-            template: 'blocks/index.pug',
+            template: 'src/blocks/index.pug',
         })
         ]
 };

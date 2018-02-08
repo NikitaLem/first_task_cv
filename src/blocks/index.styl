@@ -1,0 +1,91 @@
+@import "extends.styl"
+@import "grid-left.styl"
+@import "grid-right.styl"
+@import "media768px.styl"
+@import "media600px.styl"
+
+*
+    box-sizing border-box
+body
+    padding 0
+    margin 0
+.wrapper
+    display flex
+    margin-bottom 7.7vw
+    &__space-left
+        flex-basis 5.24vw
+    &__space-middle
+        flex-basis 6.49vw
+    &__space-right
+        flex-basis 4.637vw
+.header
+    @extends $header
+    &__circle
+        @extends $circles
+        &:before
+            @extends $circles_before
+    &__name
+        @extends $header_names
+    &__line
+        @extends $header_lines
+
+.profile_margin
+    margin-top 6.935vw
+.header__circle_profile
+    background-image url("../images/Profile_img.png")
+.contact_margin
+    margin-top 4.153vw
+.header__circle_contact
+    background-image url("../images/Contact_img.png")
+.skills_margin
+    margin-top 4.31vw
+.header__circle_skills
+    background-image url("../images/Skills_img.png")
+.education_margin
+    margin-top 6.45vw
+.header__circle_education
+    background-image url("../images/Education_img.png")
+.experience_margin
+    margin-top 4.8vw
+.header__circle_experience
+    background-image url("../images/Experience_img.png")
+.software_margin
+    margin-top 4.8vw
+.header__circle_software
+    background-image url("../images/Software_img.png")
+
+
+@font-face
+    font-family 'Myriad Pro Bold SemiExtended'
+    src url('../fonts/Myriad Pro Bold SemiExtended.eot')
+    src local('☺'), url('../fonts/Myriad Pro Bold SemiExtended.woff') format('woff'), url('../fonts/Myriad Pro Bold SemiExtended.ttf') format('truetype')
+    font-weight normal
+    font-style normal
+
+@font-face
+    font-family 'Myriad Pro Light SemiExtended'
+    src url('../fonts/Myriad Pro Light SemiExtended.eot')
+    src local('☺'), url('../fonts/Myriad Pro Light SemiExtended.woff') format('woff'), url('../fonts/Myriad Pro Light SemiExtended.ttf') format('truetype')
+    font-weight normal
+    font-style normal
+
+@font-face
+    font-family 'MyriadPro BlackSemiCn'
+    src url('../fonts/MyriadPro BlackSemiCn.eot')
+    src local('☺'), url('../fonts/MyriadPro BlackSemiCn.woff') format('woff'), url('../fonts/MyriadPro BlackSemiCn.ttf') format('truetype')
+    font-weight normal
+    font-style normal
+
+@font-face
+    font-family 'MyriadPro Bold'
+    src url('../fonts/MyriadPro Bold.eot')
+    src local('☺'), url('../fonts/MyriadPro Bold.woff') format('woff'), url('../fonts/MyriadPro Bold.ttf') format('truetype')
+    font-weight normal
+    font-style normal
+
+@font-face
+    font-family 'MyriadPro Regular'
+    src url('../fonts/MyriadPro Regular.eot')
+    src local('☺'), url('../fonts/MyriadPro Regular.woff') format('woff'), url('../fonts/MyriadPro Regular.ttf') format('truetype')
+    font-weight normal
+    font-style normal
