@@ -10,17 +10,25 @@
     font-family 'MyriadPro Regular'
     font-size 2.07vw
     padding-bottom 0.887vw
+    text-transform uppercase
+    @media only screen and (max-width: 768px)
+      font-size 1.6em
   &__value
     display flex
     justify-content space-between
     margin 0
     padding 0
     width 25.89vw
+    @media only screen and (max-width: 768px)
+      width 400px
 .value__circle
   border-radius 50%
   height 1.41vw
   width 1.41vw
   background-color #3d6cb0
+  @media only screen and (max-width: 768px)
+    height 1.41em
+    width 1.41em
 .value__circle_empty
   background-color #e6e6e6
 .skills__item_first

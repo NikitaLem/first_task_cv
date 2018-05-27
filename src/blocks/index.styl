@@ -1,9 +1,12 @@
 @import "extends.styl"
 @import "grid-left.styl"
 @import "grid-right.styl"
-@import "media768px.styl"
-@import "media600px.styl"
 
+html 
+  background #ffffff
+  font-family 'MyriadPro Regular'
+  font-size 14px
+  color #000
 *
   box-sizing border-box
 body
@@ -12,12 +15,21 @@ body
 .wrapper
   display flex
   margin-bottom 7.7vw
+  @media only screen and (max-width: 768px)
+    flex-direction column
+    margin 0 3% 7.7vw 3%
   &__space-left
     flex-basis 5.24vw
+    @media only screen and (max-width: 768px)
+      display none
   &__space-middle
     flex-basis 6.49vw
+    @media only screen and (max-width: 768px)
+      display none
   &__space-right
     flex-basis 4.637vw
+    @media only screen and (max-width: 768px)
+      display none
 .header
   @extends $header
   &__circle

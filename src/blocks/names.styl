@@ -4,6 +4,7 @@
   display flex
   align-items center
   flex-direction column
+  text-transform uppercase
   &__circle
     flex-shrink 0
     background-color #3d6cb0
@@ -11,6 +12,9 @@
     position relative
     height 16.33vw
     width 16.33vw
+    @media only screen and (max-width: 768px)
+      height 10em
+      width 10em
     &:before
       content " "
       position absolute
@@ -28,13 +32,19 @@
     font-family 'Myriad Pro Light SemiExtended'
     font-size 4.21vw
     line-height 0.71
+    @media only screen and (max-width: 768px)
+      font-size 3.5em
   &__surname
     font-family "MyriadPro Bold"
     font-size 4.98vw
     line-height 0.71
     margin-top 1.169vw
+    @media only screen and (max-width: 768px)
+      font-size 4em
   &__vacancy
     font-family 'MyriadPro BlackSemiCn'
     font-size 2vw
     margin-top 1.85vw
     line-height 0.71
+    @media only screen and (max-width: 768px)
+      font-size 1.7em

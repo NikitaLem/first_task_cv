@@ -3,11 +3,15 @@
     display flex
     justify-content space-between
     margin-top 3.1vw
+    @media only screen and (max-width: 768px)
+      justify-content space-around
   &__body-left,
   &__body-right
     flex-basis 22.3vw
     justify-content start
     flex-direction column
+    @media only screen and (max-width: 768px)
+      flex-basis 40%
   &__item
     margin-top 2.21vw
     &_first
@@ -15,6 +19,9 @@
   &__name
     font-family 'MyriadPro Regular'
     font-size 2.07vw
+    text-transform uppercase
+    @media only screen and (max-width: 768px)
+      font-size 1.5em
   &__level
     display flex
     flex-wrap nowrap

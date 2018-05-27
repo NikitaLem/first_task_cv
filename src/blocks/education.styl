@@ -3,35 +3,59 @@
     display flex
     margin-left 0.62vw
     margin-top 1.4vw
+    @media only screen and (max-width: 768px)
+      margin-top 20px
   &__dot
     flex-shrink 0
     height 1.612vw
     width 1.612vw
     border-radius 50%
     background-color black
+    @media only screen and (max-width: 768px)
+      height 1.3em
+      width 1.3em
   &__wrapper
     margin-left 1.77vw
   &__degree
     display flex
     flex-wrap wrap
+    @media only screen and (max-width: 768px)
+      display block
     .level
       font-family "MyriadPro Bold"
       color #3d6cb0
       font-size 2.07vw
       line-height 2vw
+      text-transform uppercase
+      @media only screen and (max-width: 768px)
+        font-size 1.5em
+        line-height 0.7em
     .date
       font-family 'MyriadPro Regular'
       margin-left 1.33vw
       font-size 2.07vw
       line-height 2vw
+      @media only screen and (max-width: 768px)
+        font-size 1.5em
+        line-height 0.7em
     .university
       font-family 'MyriadPro Regular'
       flex-basis 100%
       margin-top 0.8vw
       font-size 2.07vw
       line-height 2vw
+      text-transform uppercase
+      @media only screen and (max-width: 768px)
+        display block
+        margin-top 10px
+        font-size 1.5em
+        line-height 0.7em
   &__text
     @extends $textes
     margin-top 0.8vw
+    @media only screen and (max-width: 768px)
+      margin-top 15px
 .education__item_first
   margin-top 2.9vw
+  @media only screen and (max-width: 768px)
+    margin-top 20px
