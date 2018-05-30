@@ -1,3 +1,15 @@
+.header
+  @extends $header
+  &__circle
+    @extends $circles
+    &:before
+      @extends $circles_before
+    &_for-software
+      background-image url("../images/Software_img.png")
+  &__name
+    @extends $header_names
+  &__line
+    @extends $header_lines
 .software
   &__body
     display flex
@@ -5,13 +17,13 @@
     margin-top 3.1vw
     @media only screen and (max-width: 768px)
       justify-content space-around
-  &__body-left,
-  &__body-right
-    flex-basis 22.3vw
-    justify-content start
-    flex-direction column
-    @media only screen and (max-width: 768px)
-      flex-basis 40%
+    &_left,
+    &_right
+      flex-basis 22.3vw
+      justify-content start
+      flex-direction column
+      @media only screen and (max-width: 768px)
+        flex-basis 40%
   &__item
     margin-top 2.21vw
     &_first
@@ -23,31 +35,27 @@
     display flex
     flex-wrap nowrap
     margin-top 1.41vw
-.full_photoshop
-  @extends $software_level
-  background-color #3d6cb0
-  width 95%
-.full_illustrator
-  @extends $software_level
-  background-color #3d6cb0
-  width 70%
-.full_indesign
-  @extends $software_level
-  background-color #3d6cb0
-  width 50%
-.full_dreamweaver
-  @extends $software_level
-  background-color #3d6cb0
-  width 85%
-.full_aftereffects
-  @extends $software_level
-  background-color #3d6cb0
-  width 60%
-.full_htmlcss
-  @extends $software_level
-  background-color #3d6cb0
-  width 95%
-.empty
-  @extends $software_level
-  background-color #e6e6e6
-  flex-grow 1
+    &_empty
+      @extends $software_level
+      background-color #e6e6e6
+      flex-grow 1
+    &_95-of-full
+      @extends $software_level
+      background-color #3d6cb0
+      width 95%
+    &_70-of-full
+      @extends $software_level
+      background-color #3d6cb0
+      width 70%
+    &_50-of-full
+      @extends $software_level
+      background-color #3d6cb0
+      width 50%
+    &_85-of-full
+      @extends $software_level
+      background-color #3d6cb0
+      width 85%
+    &_60-of-full
+      @extends $software_level
+      background-color #3d6cb0
+      width 60%

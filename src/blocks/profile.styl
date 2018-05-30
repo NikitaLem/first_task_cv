@@ -1,3 +1,15 @@
+.header
+  @extends $header
+  &__circle
+    @extends $circles
+    &:before
+      @extends $circles_before
+    &_for-profile
+      background-image url("../images/Profile_img.png")
+  &__name
+    @extends $header_names
+  &__line
+    @extends $header_lines
 .profile__text
   @extends $textes
   margin-top 1.45vw

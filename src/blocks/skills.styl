@@ -1,3 +1,15 @@
+.header
+  @extends $header
+  &__circle
+    @extends $circles
+    &:before
+      @extends $circles_before
+    &_for-skills
+      background-image url("../images/Skills_img.png")
+  &__name
+    @extends $header_names
+  &__line
+    @extends $header_lines
 .skills
   &__body
     display flex
@@ -5,6 +17,8 @@
     align-items center
   &__item
     margin-top 1.81vw
+    &_first
+      margin-top 2.34vw
   &__name
     text-align center
     font-size 2.79rem
@@ -28,5 +42,3 @@
     width 2.41rem
 .value__circle_empty
   background-color #e6e6e6
-.skills__item_first
-  margin-top 2.34vw
