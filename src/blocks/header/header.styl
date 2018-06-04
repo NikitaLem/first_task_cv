@@ -11,11 +11,9 @@ $circles
   background-repeat no-repeat
   background-position 50% 50%
   background-size 60% auto
-  height 5.12vw
-  width 5.12vw
-  @media only screen and (max-width: 768px)
-    height 6.5em
-    width 6.5em
+  height 6.5em
+  width 6.5em
+    
 
 $circles_before
   top -6%
@@ -40,18 +38,29 @@ $header_names
 
 $header_lines
   margin 0 0 0 10px
-  height 0.4vw
+  height 5px
   flex-grow 1
   background-color #3d6cb0
-  @media only screen and (max-width: 768px)
-    height 8px
 
-$textes
-  font-size 1.67rem
-  text-align left
-
-$software_level
-  display inline-block
-  height 1.77vw
-  @media only screen and (max-width: 768px)
-    height 1.7em
+.header
+  @extends $header
+  &__circle
+    @extends $circles
+    &:before
+      @extends $circles_before
+    &_for-profile
+      background-image url("../images/Profile_img.jpg")
+    &_for-contact
+      background-image url("../images/Contact_img.jpg")
+    &_for-skills
+      background-image url("../images/Skills_img.jpg")
+    &_for-education
+      background-image url("../images/Education_img.jpg")
+    &_for-experience
+      background-image url("../images/Experience_img.jpg")
+    &_for-software
+      background-image url("../images/Software_img.jpg")
+  &__name
+    @extends $header_names
+  &__line
+    @extends $header_lines

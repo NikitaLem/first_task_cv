@@ -1,15 +1,5 @@
-.header
-  @extends $header
-  &__circle
-    @extends $circles
-    &:before
-      @extends $circles_before
-    &_for-experience
-      background-image url("../images/Experience_img.jpg")
-  &__name
-    @extends $header_names
-  &__line
-    @extends $header_lines
+@import "../header/header.styl"
+
 .experience
   &__item
     display flex
@@ -21,8 +11,8 @@
       margin-top 4.15vw
   &__dot
     flex-shrink 0
-    height 2.1rem
-    width 2.1rem
+    height 2.07vw
+    width 2.07vw
     border-radius 50%
     background-color black
   &__wrapper
@@ -32,30 +22,35 @@
     flex-wrap wrap
     @media only screen and (max-width: 768px)
       display block
-  &__level
+  &__name-of-company
     font-weight 700
-    font-size 2.79rem
-    line-height 2.7rem
+    font-size 2.07vw
+    line-height 2vw
     text-transform uppercase
+    @media only screen and (max-width: 768px)
+      font-size 2.79rem
+      line-height 0.7em
   &__date
     margin-left 1.33vw
-    font-size 2.79rem
-    line-height 2.7rem
+    font-size 2.07vw
+    line-height 2vw
     @media only screen and (max-width: 768px)
       margin-left 30px
+      font-size 2.79rem
       line-height 0.7em
-  &__university
+  &__vacancy
     flex-basis 100%
     margin-top 0.8vw
-    font-size 2.79rem
-    line-height 2.7rem
+    font-size 2.07vw
+    line-height 2vw
     text-transform uppercase
     @media only screen and (max-width: 768px)
       display block
       margin-top 10px
+      font-size 2.79rem
       line-height 0.7em
   &__text
-    @extends $textes
+    font-size 1.67rem
     margin-top 0.8vw
     @media only screen and (max-width: 768px)
       margin-top 15px

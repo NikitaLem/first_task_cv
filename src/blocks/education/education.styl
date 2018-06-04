@@ -1,15 +1,5 @@
-.header
-  @extends $header
-  &__circle
-    @extends $circles
-    &:before
-      @extends $circles_before
-    &_for-education
-      background-image url("../images/Education_img.jpg")
-  &__name
-    @extends $header_names
-  &__line
-    @extends $header_lines
+@import "../header/header.styl"
+
 .education
   &__item
     display flex
@@ -23,8 +13,8 @@
         margin-top 20px
   &__dot
     flex-shrink 0
-    height 2.1rem
-    width 2.1rem
+    height 2.07vw
+    width 2.07vw
     border-radius 50%
     background-color black
   &__wrapper
@@ -37,29 +27,32 @@
   &__level
     font-weight 700
     color #3d6cb0
-    font-size 2.79rem
-    line-height 2.7rem
+    font-size 2.07vw
+    line-height 2vw
     text-transform uppercase
     @media only screen and (max-width: 768px)
+      font-size 2.79rem
       line-height 0.7em
   &__date
     margin-left 1.33vw
-    font-size 2.79rem
-    line-height 2.7rem
+    font-size 2.07vw
+    line-height 2vw
     @media only screen and (max-width: 768px)
+      font-size 2.79rem
       line-height 0.7em
   &__university
     flex-basis 100%
     margin-top 0.8vw
-    font-size 2.79rem
-    line-height 2.7rem
+    font-size 2.07vw
+    line-height 2vw
     text-transform uppercase
     @media only screen and (max-width: 768px)
       display block
       margin-top 10px
+      font-size 2.79rem
       line-height 0.7em
   &__text
-    @extends $textes
+    font-size 1.67rem
     margin-top 0.8vw
     @media only screen  and (max-width: 768px)
       margin-top 15px

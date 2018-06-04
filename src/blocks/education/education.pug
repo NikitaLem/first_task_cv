@@ -1,0 +1,10 @@
+mixin education(level, date, university, text, isFirst)
+    .education
+        div(class="education__item education__item_"+isFirst)
+            .education__dot
+            .education__wrapper
+                .education__degree
+                    span.education__level= level
+                    span.education__date= date
+                    span.education__university= university
+                .education__text= text

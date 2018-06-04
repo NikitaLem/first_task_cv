@@ -1,15 +1,11 @@
-.header
-  @extends $header
-  &__circle
-    @extends $circles
-    &:before
-      @extends $circles_before
-    &_for-software
-      background-image url("../images/Software_img.jpg")
-  &__name
-    @extends $header_names
-  &__line
-    @extends $header_lines
+@import "../header/header.styl"
+
+$software_level
+  display inline-block
+  height 1.77vw
+  @media only screen and (max-width: 768px)
+    height 1.7em
+
 .software
   &__body
     display flex

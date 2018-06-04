@@ -1,0 +1,10 @@
+mixin experience(nameOfCompany, date, vacancy, text, isFirst)
+    .experience
+        div(class="experience__item experience__item_"+isFirst)
+            .experience__dot
+            .experience__wrapper
+                .experience__degree
+                    span.experience__name-of-company= nameOfCompany
+                    span.experience__date= date
+                    span.experience__vacancy= vacancy
+                .experience__text= text

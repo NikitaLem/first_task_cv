@@ -1,6 +1,10 @@
-@import "extends.styl"
-@import "grid-left.styl"
-@import "grid-right.styl"
+@import "names/names.styl"
+@import "profile/profile.styl"
+@import "contact/contact.styl"
+@import "skills/skills.styl"
+@import "education/education.styl"
+@import "experience/experience.styl"
+@import "software/software.styl"
 
 html 
   background #ffffff
@@ -18,22 +22,40 @@ body
   margin 0
 .wrapper
   display flex
-  margin-bottom 7.7vw
+  padding-bottom 7.7vw
   @media only screen and (max-width: 768px)
     flex-direction column
     margin 0 3% 7.7vw 3%
-  &__space-left
-    flex-basis 5.24vw
-    @media only screen and (max-width: 768px)
-      display none
-  &__space-middle
-    flex-basis 6.49vw
-    @media only screen and (max-width: 768px)
-      display none
-  &__space-right
-    flex-basis 4.637vw
-    @media only screen and (max-width: 768px)
-      display none
+.cell-1
+  flex-basis 5.24vw
+  @media only screen and (max-width: 768px)
+    display none
+.cell-2
+  flex-basis 32.98vw
+.names_pushed-top
+  margin-top 8.3vw
+.profile_pushed-top
+  margin-top 6.935vw
+.contact_pushed-top
+  margin-top 4.153vw
+.skills_pushed-top
+  margin-top 4.31vw
+.cell-3
+  flex-basis 6.49vw
+  @media only screen and (max-width: 768px)
+    display none
+.cell-4
+  flex-basis 50.65vw
+.education_pushed-top
+  margin-top 6.45vw
+.experience_pushed-top
+  margin-top 4.8vw
+.software_pushed-top
+  margin-top 4.8vw
+.cell-5
+  flex-basis 4.637vw
+  @media only screen and (max-width: 768px)
+    display none
 
 
 @font-face

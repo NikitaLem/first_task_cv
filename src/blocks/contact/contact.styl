@@ -1,15 +1,5 @@
-.header
-  @extends $header
-  &__circle
-    @extends $circles
-    &:before
-      @extends $circles_before
-    &_for-contact
-      background-image url("../images/Contact_img.jpg")
-  &__name
-    @extends $header_names
-  &__line
-    @extends $header_lines
+@import "../header/header.styl"
+
 .contact
   &__item
     display flex

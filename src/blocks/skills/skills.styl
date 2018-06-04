@@ -1,15 +1,5 @@
-.header
-  @extends $header
-  &__circle
-    @extends $circles
-    &:before
-      @extends $circles_before
-    &_for-skills
-      background-image url("../images/Skills_img.jpg")
-  &__name
-    @extends $header_names
-  &__line
-    @extends $header_lines
+@import "../header/header.styl"
+
 .skills
   &__body
     display flex
@@ -36,9 +26,9 @@
   border-radius 50%
   height 1.41vw
   width 1.41vw
-  background-color #3d6cb0
+  background-color #e6e6e6
   @media only screen and (max-width: 768px)
     height 2.41rem
     width 2.41rem
-.value__circle_empty
-  background-color #e6e6e6
+.value__circle_full
+  background-color #3d6cb0
