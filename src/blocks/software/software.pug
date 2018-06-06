@@ -1,33 +1,6 @@
-mixin software(title1, value1, title2, value2, title3, value3, title4, value4, title5, value5, title6, value6)
-    .software
-        .software__body
-            .software__item.software__item_no-margin
-                .software__name= title1
-                .software__level
-                    span(class="software__level_"+value1+"-of-full")
-                    span.software__level_empty
-            .software__item.software__item_no-margin
-                .software__name= title2
-                .software__level
-                    span(class="software__level_"+value2+"-of-full")
-                    span.software__level_empty
-            .software__item
-                .software__name= title3
-                .software__level
-                    span(class="software__level_"+value3+"-of-full")
-                    span.software__level_empty
-            .software__item
-                .software__name= title4
-                .software__level
-                    span(class="software__level_"+value4+"-of-full")
-                    span.software__level_empty
-            .software__item
-                .software__name= title5
-                .software__level
-                    span(class="software__level_"+value5+"-of-full")
-                    span.software__level_empty
-            .software__item
-                .software__name= title6
-                .software__level
-                    span(class="software__level_"+value6+"-of-full")
-                    span.software__level_empty
+mixin software(title, value)
+    .software__item
+        .software__name= title
+        .software__level
+            span(class="software__level_"+value+"-of-full")
+            span.software__level_empty

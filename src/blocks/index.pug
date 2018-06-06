@@ -30,8 +30,13 @@ html
                     +header("contact", "for-contact")
                     +contact("Main Street, City.", "contact@domain.com", "555-555-555", "www.yourweb.com")
                 .skills_pushed-top
-                    +header("skills", "for-skills")
                     include ./skills/skills.pug
+                    +header("skills", "for-skills")
+                    .skills__container
+                        +skills("creative", "9")
+                        +skills("teamwork ", "11")
+                        +skills("innovate ", "6")
+                        +skills("communication ", "11")
             .cell-3
             .cell-4
                 .education_pushed-top
@@ -50,5 +55,11 @@ html
                 .software_pushed-top
                     include ./software/software.pug
                     +header("software", "for-software")
-                    +software("photoshop", "95", "dreamweaver", "90", "illustrator", "80", "after effects", "70", "indesign", "60", "html&css3", "95")
+                    .software__container
+                        +software("photoshop", "95")
+                        +software("dreamweaver", "90")
+                        +software("illustrator", "85")
+                        +software("after effects", "70")
+                        +software("indesign", "60")
+                        +software("html&css3", "95")
             .cell-5

@@ -1,62 +1,9 @@
-.skills
-    .skills__body
-        .skills__item.skills__item_first
-            .skills__name creative
-            .skills__value
-                .value__circle.value__circle_full
-                .value__circle.value__circle_full
-                .value__circle.value__circle_full
-                .value__circle.value__circle_full
-                .value__circle.value__circle_full
-                .value__circle.value__circle_full
-                .value__circle.value__circle_full
-                .value__circle.value__circle_full
-                .value__circle.value__circle_full
-                .value__circle
-                .value__circle
-                .value__circle
+mixin skills(title, val)
+    .skills
         .skills__item
-            .skills__name teamwork
+            .skills__name= title
             .skills__value
-                .value__circle.value__circle_full
-                .value__circle.value__circle_full
-                .value__circle.value__circle_full
-                .value__circle.value__circle_full
-                .value__circle.value__circle_full
-                .value__circle.value__circle_full
-                .value__circle.value__circle_full
-                .value__circle.value__circle_full
-                .value__circle.value__circle_full
-                .value__circle.value__circle_full
-                .value__circle.value__circle_full
-                .value__circle
-        .skills__item
-            .skills__name innovate
-            .skills__value
-                .value__circle.value__circle_full
-                .value__circle.value__circle_full
-                .value__circle.value__circle_full
-                .value__circle.value__circle_full
-                .value__circle.value__circle_full
-                .value__circle.value__circle_full
-                .value__circle
-                .value__circle
-                .value__circle
-                .value__circle
-                .value__circle
-                .value__circle
-        .skills__item
-            .skills__name communication
-            .skills__value
-                .value__circle.value__circle_full
-                .value__circle.value__circle_full
-                .value__circle.value__circle_full
-                .value__circle.value__circle_full
-                .value__circle.value__circle_full
-                .value__circle.value__circle_full
-                .value__circle.value__circle_full
-                .value__circle.value__circle_full
-                .value__circle.value__circle_full
-                .value__circle.value__circle_full
-                .value__circle.value__circle_full
-                .value__circle
+                - for(var i = 0; i < val; i++)
+                    .value__circle.value__circle_full
+                - for(var j = 0; j < (12 - val); j++)
+                    .value__circle.
