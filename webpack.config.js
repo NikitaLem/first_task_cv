@@ -2,7 +2,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var path = require('path');
 
 module.exports = {
-    entry: './src/assets/js/index.js',
+    entry: './src/index.js',
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'docs')
@@ -11,7 +11,7 @@ module.exports = {
         rules: [
             {
                 test: /\.styl$/, 
-                use: ['style-loader', 'css-loader', 'stylus-loader']
+                use: ['style-loader', 'css-loader?url=false', 'stylus-loader']
             },
             {
                 test: /\.pug$/,
@@ -49,7 +49,7 @@ module.exports = {
                 collapseWhitespace: true
             },
             hash: true,
-            template: 'src/blocks/index.pug',
+            template: 'src/index.pug',
         })
         ]
 };
