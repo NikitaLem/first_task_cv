@@ -1,53 +1,28 @@
-$header
+.header
   display flex
   align-items center
   justify-content space-between
-
-$circles
-  flex-shrink 0
-  background-color #3d6cb0
-  border-radius 50%
-  position relative                                          
-  background-repeat no-repeat
-  background-position 50% 50%
-  background-size 60% auto
-  height 6.5em
-  width 6.5em
-    
-
-$circles_before
-  top -6%
-  left -6%
-  right -6%
-  bottom -6%
-  border-width 1px
-  content " "
-  position absolute
-  z-index 1
-  border 1px solid #3d6cb0
-  border-radius 50%
-
-$header_names
-  font-family "MyriadPro", Arial, sans-serif
-  font-weight 700
-  font-style normal
-  font-size 4.78rem
-  color #3d6cb0
-  padding-left 15px
-  text-transform uppercase
-
-$header_lines
-  margin 0 0 0 10px
-  height 5px
-  flex-grow 1
-  background-color #3d6cb0
-
-.header
-  @extends $header
   &__circle
-    @extends $circles
+    flex-shrink 0
+    background-color #3d6cb0
+    border-radius 50%
+    position relative                                          
+    background-repeat no-repeat
+    background-position 50% 50%
+    background-size 60% auto
+    height 6.5em
+    width 6.5em
     &:before
-      @extends $circles_before
+      top -6%
+      left -6%
+      right -6%
+      bottom -6%
+      border-width 1px
+      content " "
+      position absolute
+      z-index 1
+      border 1px solid #3d6cb0
+      border-radius 50%
     &_for-profile
       background-image url("images/Profile_img.jpg")
     &_for-contact
@@ -61,6 +36,15 @@ $header_lines
     &_for-software
       background-image url("images/Software_img.jpg")
   &__name
-    @extends $header_names
+    font-family "MyriadPro", Arial, sans-serif
+    font-weight 700
+    font-style normal
+    font-size 4.78rem
+    color #3d6cb0
+    padding-left 15px
+    text-transform uppercase
   &__line
-    @extends $header_lines
+    margin 0 0 0 10px
+    height 5px
+    flex-grow 1
+    background-color #3d6cb0

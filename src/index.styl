@@ -6,6 +6,8 @@
 @import "blocks/experience/experience.styl"
 @import "blocks/software/software.styl"
 
+*
+  box-sizing border-box
 html 
   background #ffffff
   font-family "MyriadPro", Arial, sans-serif
@@ -15,8 +17,6 @@ html
   color #000
   @media only screen and (max-width: 768px)
     font-size 52%
-*
-  box-sizing border-box
 body
   padding 0
   margin 0
@@ -28,17 +28,19 @@ body
     margin 0 3% 7.7vw 3%
 .cell-1
   flex-basis 5.24vw
+  @media only screen and (min-width: 1650px)
+    flex-basis 350px
   @media only screen and (max-width: 768px)
     display none
 .cell-2
   flex-basis 32.98vw
-.names_pushed-top
+.names-wrapper
   margin-top 8.3vw
-.profile_pushed-top
+.profile-wrapper
   margin-top 6.935vw
-.contact_pushed-top
+.contact-wrapper
   margin-top 4.153vw
-.skills_pushed-top
+.skills-wrapper
   margin-top 4.31vw
 .skills__container
   display flex
@@ -51,11 +53,11 @@ body
     display none
 .cell-4
   flex-basis 50.65vw
-.education_pushed-top
+.education-wrapper
   margin-top 6.45vw
-.experience_pushed-top
+.experience-wrapper
   margin-top 4.8vw
-.software_pushed-top
+.software-wrapper
   margin-top 4.8vw
 .software__container
   display grid
@@ -66,6 +68,8 @@ body
   margin-top 3.1vw
 .cell-5
   flex-basis 4.637vw
+  @media only screen and (min-width: 1650px)
+    flex-basis 350px
   @media only screen and (max-width: 768px)
     display none
 

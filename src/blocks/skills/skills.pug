@@ -1,4 +1,4 @@
-mixin skills(title, val)
+mixin skills({title, val})
     .skills
         .skills__item
             .skills__name= title
@@ -6,4 +6,4 @@ mixin skills(title, val)
                 - for(var i = 0; i < val; i++)
                     .value__circle.value__circle_full
                 - for(var j = 0; j < (12 - val); j++)
-                    .value__circle.
+                    .value__circle

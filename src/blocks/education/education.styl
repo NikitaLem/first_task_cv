@@ -13,44 +13,44 @@
         margin-top 20px
   &__dot
     flex-shrink 0
-    height 2.07vw
-    width 2.07vw
+    height 2.7rem
+    width 2.7rem
     border-radius 50%
     background-color black
+    @media only screen and (max-width: 768px)
+      height 2rem
+      width 2rem
   &__wrapper
     margin-left 1.77vw
   &__degree
     display flex
     flex-wrap wrap
     @media only screen and (max-width: 768px)
-      display block
+      flex-direction column
   &__level
     font-weight 700
     color #3d6cb0
-    font-size 2.07vw
-    line-height 2vw
+    font-size 2.8rem
+    line-height 2.7rem
     text-transform uppercase
-    @media only screen and (max-width: 768px)
-      font-size 2.79rem
-      line-height 0.7em
   &__date
     margin-left 1.33vw
-    font-size 2.07vw
-    line-height 2vw
+    font-size 2.8rem
+    line-height 2.7rem
+    @media only screen and (max-width: 1066px)
+      margin-top 6px
+      margin-left 0
     @media only screen and (max-width: 768px)
-      font-size 2.79rem
-      line-height 0.7em
+      margin-top 10px
   &__university
     flex-basis 100%
     margin-top 0.8vw
-    font-size 2.07vw
-    line-height 2vw
+    font-size 2.8rem
+    line-height 2.7rem
     text-transform uppercase
     @media only screen and (max-width: 768px)
       display block
       margin-top 10px
-      font-size 2.79rem
-      line-height 0.7em
   &__text
     font-size 1.67rem
     margin-top 0.8vw
