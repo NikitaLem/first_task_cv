@@ -1,5 +1,6 @@
-mixin header({title, forWhichBlock})
+mixin header({title, imgSrc})
     .header
-            div(class= "header__circle header__circle_"+forWhichBlock)
+            div(class= "header__circle")
+                img(class= "header__img" src= imgSrc alt= "image-" + title)
             span.header__name= title
             .header__line

@@ -4,13 +4,13 @@
   justify-content space-between
 
   &__circle
+    display flex
+    justify-content center
+    align-items center
     flex-shrink 0
     background-color #3d6cb0
     border-radius 50%
-    position relative                                          
-    background-repeat no-repeat
-    background-position 50% 50%
-    background-size 60% auto
+    position relative
     height 6.5em
     width 6.5em
 
@@ -26,23 +26,8 @@
       border 1px solid #3d6cb0
       border-radius 50%
 
-    &_for-profile
-      background-image url("images/Profile_img.jpg")
-
-    &_for-contact
-      background-image url("images/Contact_img.jpg")
-
-    &_for-skills
-      background-image url("images/Skills_img.jpg")
-
-    &_for-education
-      background-image url("images/Education_img.jpg")
-
-    &_for-experience
-      background-image url("images/Experience_img.jpg")
-
-    &_for-software
-      background-image url("images/Software_img.jpg")
+  &__img
+    width 65%
 
   &__name
     font-family "MyriadPro", Arial, sans-serif
