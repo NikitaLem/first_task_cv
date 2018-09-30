@@ -35,32 +35,32 @@ html
         .wrapper
             .cell-1
             .cell-2
-                section.names-wrapper
+                section.names-wrapper.names-wrapper_pushed-top
                     +names(personName)
-                section.profile-wrapper
+                section.profile-wrapper.profile-wrapper_pushed-top
                     +header(headersArr[0])
                     +profile(profileText)
-                section.contact-wrapper
+                section.contact-wrapper.contact-wrapper_pushed-top
                     +header(headersArr[1])
                     +contact(contactsOfPerson)
-                section.skills-wrapper
+                section.skills-wrapper.skills-wrapper_pushed-top
                     +header(headersArr[2])
-                    .skills__container
+                    .skills-wrapper__item
                         - for (var i = 0; i < skillsArr.length; i += 1) 
                             +skills(skillsArr[i])
             .cell-3
             .cell-4
-                section.education-wrapper
+                section.education-wrapper.education-wrapper_pushed-top
                     +header(headersArr[3])
                     - for (var i = 0; i < educationArr.length; i += 1)
                         +education(educationArr[i])
-                section.experience-wrapper
+                section.experience-wrapper.experience-wrapper_pushed-top
                     +header(headersArr[4])
                     - for (var i = 0; i < experienceArr.length; i += 1)
                         +experience(experienceArr[i])
-                section.software-wrapper
+                section.software-wrapper.software-wrapper_pushed-top
                     +header(headersArr[5])
-                    .software__container
+                    .software-wrapper__item
                         - for (var i = 0; i < softwareArr.length; i += 1)
                             +software(softwareArr[i])
             .cell-5
