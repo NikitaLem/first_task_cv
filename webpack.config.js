@@ -18,6 +18,10 @@ module.exports = {
                 use: ['raw-loader', 'pug-html-loader']
             },
             {
+                test: /node_modules\/JSONStream\/index\.js$/,
+                loaders: ['shebang']
+            },
+            {
                 test: /\.(woff(2)?|ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,    //to support @font-face rule 
                 loader: "url-loader",
                 query:{
