@@ -2,6 +2,5 @@ mixin software({title, val})
     .software__item
         .software__name= title
         .software__level
-            - for (var i = 0; i < val && i < 100; i += 1)
-                span(class="software__level_full")    
+            span(class="software__level_full" style="width: " + #{val})    
             span.software__level_empty
