@@ -1,7 +1,7 @@
-@import "blocks/names/names.styl"
+@import "blocks/person/person.styl"
 @import "blocks/profile/profile.styl"
 @import "blocks/contact/contact.styl"
-@import "blocks/skills/skills.styl"
+@import "blocks/skill/skill.styl"
 @import "blocks/education/education.styl"
 @import "blocks/experience/experience.styl"
 @import "blocks/software/software.styl"
@@ -23,59 +23,59 @@ body
   padding 0
   margin 0
 
-.wrapper
+.main-content
   display flex
   padding-bottom 7.7vw
   @media only screen and (max-width: 768px)
     flex-direction column
     margin 0 3% 7.7vw 3%
 
-.cell-1
+.main-content__buffer_left
   flex-basis 5.24vw
   @media only screen and (min-width: 1650px)
     flex-basis 35rem
   @media only screen and (max-width: 768px)
     display none
 
-.cell-2
+.main-content__section_left
   flex-basis 32.98vw
 
-.names-wrapper_pushed-top
+.main-content__person
   margin-top 8.3vw
 
-.profile-wrapper_pushed-top
+.main-content__profile
   margin-top 6.935vw
 
-.contact-wrapper_pushed-top
+.main-content__contact
   margin-top 4.153vw
 
-.skills-wrapper_pushed-top
+.main-content__skills
   margin-top 4.31vw
 
-.skills-wrapper__item
+.main-content__skills-flex-container
   display flex
   flex-direction column
   align-items center
   margin-top 0.9vw
 
-.cell-3
+.main-content__buffer_middle
   flex-basis 6.49vw
   @media only screen and (max-width: 768px)
     display none
 
-.cell-4
+.main-content__section_right
   flex-basis 50.65vw
 
-.education-wrapper_pushed-top
+.main-content__education
   margin-top 6.45vw
 
-.experience-wrapper_pushed-top
+.main-content__experience
   margin-top 4.8vw
 
-.software-wrapper_pushed-top
+.main-content__software
   margin-top 4.8vw
 
-.software-wrapper__item
+.main-content__software-flex-container
   display grid
   grid-template-columns 1fr 1fr
   grid-template-rows auto
@@ -83,7 +83,7 @@ body
   grid-row-gap 2.21vw
   margin-top 3.1vw
 
-.cell-5
+.main-content__buffer_right
   flex-basis 4.637vw
   @media only screen and (min-width: 1650px)
     flex-basis 35rem

@@ -14,11 +14,11 @@ html
         meta(name="theme-color", content="#ffffff")
         title Your cv
     body
-        include blocks/names/names.pug
+        include blocks/person/person.pug
         include blocks/header/header.pug
         include blocks/profile/profile.pug
         include blocks/contact/contact.pug
-        include blocks/skills/skills.pug
+        include blocks/skill/skill.pug
         include blocks/education/education.pug
         include blocks/experience/experience.pug
         include blocks/software/software.pug
@@ -30,37 +30,37 @@ html
         - var skillsArr = [{ title: "creative", val: "9"}, { title: "teamwork", val: "11"}, { title: "innovate", val: "6"}, { title: "communication", val: "11"}]
         - var educationArr = [{ level: "master degree", date: "// Feb 2011 - Jun 2014", university: "university name", text: "Leman Russ, also known as the Wolf King and the Great Wolf during his lifetime, is the currently missing Primarch of the Space Wolves Chapter of Space Marines. He led the Space Wolves Legion during the Great Crusade and the Horus Heresy.", isFirst: "first" }, { level: "master degree", date: "// Feb 2011 - Jun 2014", university: "university name", text: "Leman Russ, also known as the Wolf King and the Great Wolf during his lifetime, is the currently missing Primarch of the Space Wolves Chapter of Space Marines. He led the Space Wolves Legion during the Great Crusade and the Horus Heresy." }, { level: "master degree", date: "// Feb 2011 - Jun 2014", university: "university name", text: "Leman Russ, also known as the Wolf King and the Great Wolf during his lifetime, is the currently missing Primarch of the Space Wolves Chapter of Space Marines. He led the Space Wolves Legion during the Great Crusade and the Horus Heresy." }, { level: "master degree", date: "// Feb 2011 - Jun 2014", university: "university name", text: "Leman Russ, also known as the Wolf King and the Great Wolf during his lifetime, is the currently missing Primarch of the Space Wolves Chapter of Space Marines. He led the Space Wolves Legion during the Great Crusade and the Horus Heresy."}]
         - var experienceArr = [{ nameOfCompany: "company name", date: "// Feb 2011 - Jun 2014", vacancy: "your job here", text: "Leman Russ, also known as the Wolf King and the Great Wolf during his lifetime, is the currently missing Primarch of the Space Wolves Chapter of Space Marines. He led the Space Wolves Legion during the Great Crusade and the Horus Heresy.", isFirst: "first" }, { nameOfCompany: "company name", date: "// Feb 2011 - Jun 2014", vacancy: "your job here", text: "Leman Russ, also known as the Wolf King and the Great Wolf during his lifetime, is the currently missing Primarch of the Space Wolves Chapter of Space Marines. He led the Space Wolves Legion during the Great Crusade and the Horus Heresy." }, { nameOfCompany: "company name", date: "// Feb 2011 - Jun 2014", vacancy: "your job here", text: "Leman Russ, also known as the Wolf King and the Great Wolf during his lifetime, is the currently missing Primarch of the Space Wolves Chapter of Space Marines. He led the Space Wolves Legion during the Great Crusade and the Horus Heresy." }]
-        - var softwareArr = [{title: "photoshop", val: "95%"}, {title: "dreamweaver", val: "90%"}, {title: "after effects", val: "70%"}, {title: "indesign", val: "60%"}, {title: "html&css3", val: "95%"}]
+        - var softwareArr = [{title: "photoshop", val: "95%"}, {title: "dreamweaver", val: "90%"}, {title: "illustrator", val: "80%"}, {title: "after effects", val: "70%"}, {title: "indesign", val: "60%"}, {title: "html&css3", val: "95%"}]
 
-        .wrapper
-            .cell-1
-            .cell-2
-                section.names-wrapper.names-wrapper_pushed-top
-                    +names(personName)
-                section.profile-wrapper.profile-wrapper_pushed-top
+        main.main-content
+            .main-content__buffer.main-content__buffer_left
+            section.main-content__section.main-content__section_left
+                section.main-content__person
+                    +person(personName)
+                section.main-content__profile
                     +header(headersArr[0])
                     +profile(profileText)
-                section.contact-wrapper.contact-wrapper_pushed-top
+                section.main-content__contact
                     +header(headersArr[1])
                     +contact(contactsOfPerson)
-                section.skills-wrapper.skills-wrapper_pushed-top
+                section.main-content__skills
                     +header(headersArr[2])
-                    .skills-wrapper__item
+                    .main-content__skills-flex-container
                         - for (var i = 0; i < skillsArr.length; i += 1) 
-                            +skills(skillsArr[i])
-            .cell-3
-            .cell-4
-                section.education-wrapper.education-wrapper_pushed-top
+                            +skill(skillsArr[i])
+            .main-content__buffer.main-content__buffer_middle
+            section.main-content__section.main-content__section_right
+                section.main-content__education
                     +header(headersArr[3])
                     - for (var i = 0; i < educationArr.length; i += 1)
                         +education(educationArr[i])
-                section.experience-wrapper.experience-wrapper_pushed-top
+                section.main-content__experience
                     +header(headersArr[4])
                     - for (var i = 0; i < experienceArr.length; i += 1)
                         +experience(experienceArr[i])
-                section.software-wrapper.software-wrapper_pushed-top
+                section.main-content__software
                     +header(headersArr[5])
-                    .software-wrapper__item
+                    .main-content__software-flex-container
                         - for (var i = 0; i < softwareArr.length; i += 1)
                             +software(softwareArr[i])
-            .cell-5
+            .main-content__buffer.main-content__buffer_right
