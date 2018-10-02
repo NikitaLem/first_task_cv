@@ -11,4 +11,4 @@ mixin contact({address, email, phone, website})
             a(class="contact__value contact__value_link" href="tel: " + phone)= phone
         .contact__item
             .contact__name website
-            a(class="contact__value contact__value_link" href= website)= website
+            a(class="contact__value contact__value_link" target="_blank"  rel="noopener noreferrer" href= website)= website
