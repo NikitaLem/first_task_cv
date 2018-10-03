@@ -1,0 +1,74 @@
+@import "../person/person.styl"
+@import "../profile/profile.styl"
+@import "../contact/contact.styl"
+@import "../skill/skill.styl"
+@import "../education/education.styl"
+@import "../experience/experience.styl"
+@import "../software/software.styl"
+
+.main-content
+  display flex
+  padding-bottom 7.7vw
+  @media only screen and (max-width: 768px)
+    flex-direction column
+    margin 0 3% 7.7vw 3%
+
+.main-content__buffer_left
+  flex-basis 5.24vw
+  @media only screen and (min-width: 1650px)
+    flex-basis 35rem
+  @media only screen and (max-width: 768px)
+    display none
+
+.main-content__section_left
+  flex-basis 32.98vw
+
+.main-content__person
+  margin-top 8.3vw
+
+.main-content__profile
+  margin-top 6.935vw
+
+.main-content__contact
+  margin-top 4.153vw
+
+.main-content__skills
+  margin-top 4.31vw
+
+.main-content__skills-flex-container
+  display flex
+  flex-direction column
+  align-items center
+  margin-top 0.9vw
+
+.main-content__buffer_middle
+  flex-basis 6.49vw
+  @media only screen and (max-width: 768px)
+    display none
+
+.main-content__section_right
+  flex-basis 50.65vw
+
+.main-content__education
+  margin-top 6.45vw
+
+.main-content__experience
+  margin-top 4.8vw
+
+.main-content__software
+  margin-top 4.8vw
+
+.main-content__software-flex-container
+  display grid
+  grid-template-columns 1fr 1fr
+  grid-template-rows auto
+  grid-column-gap 5.61vw
+  grid-row-gap 2.21vw
+  margin-top 3.1vw
+
+.main-content__buffer_right
+  flex-basis 4.637vw
+  @media only screen and (min-width: 1650px)
+    flex-basis 35rem
+  @media only screen and (max-width: 768px)
+    display none

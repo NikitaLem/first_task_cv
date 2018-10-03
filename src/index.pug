@@ -14,14 +14,7 @@ html
         meta(name="theme-color", content="#ffffff")
         title Your cv
     body
-        include blocks/person/person.pug
-        include blocks/header/header.pug
-        include blocks/profile/profile.pug
-        include blocks/contact/contact.pug
-        include blocks/skill/skill.pug
-        include blocks/education/education.pug
-        include blocks/experience/experience.pug
-        include blocks/software/software.pug
+        include blocks/main-content/main-content.pug
 
         - var personName = { firstName: "Name Here", surname: "surname", vacancy: "graphic designer" }
         - var headersArr = [{ title: "profile", imgSrc: "images/profile.png", }, { title: "contact", imgSrc: "images/contact.png", }, { title: "skills", imgSrc: "images/skills.png", }, { title: "education", imgSrc: "images/education.png", }, { title: "experience", imgSrc: "images/experience.png", }, { title: "software", imgSrc: "images/software.png", }, ]
@@ -31,36 +24,6 @@ html
         - var educationArr = [{ level: "master degree", date: "// Feb 2011 - Jun 2014", university: "university name", text: "Leman Russ, also known as the Wolf King and the Great Wolf during his lifetime, is the currently missing Primarch of the Space Wolves Chapter of Space Marines. He led the Space Wolves Legion during the Great Crusade and the Horus Heresy.", isFirst: "first" }, { level: "master degree", date: "// Feb 2011 - Jun 2014", university: "university name", text: "Leman Russ, also known as the Wolf King and the Great Wolf during his lifetime, is the currently missing Primarch of the Space Wolves Chapter of Space Marines. He led the Space Wolves Legion during the Great Crusade and the Horus Heresy." }, { level: "master degree", date: "// Feb 2011 - Jun 2014", university: "university name", text: "Leman Russ, also known as the Wolf King and the Great Wolf during his lifetime, is the currently missing Primarch of the Space Wolves Chapter of Space Marines. He led the Space Wolves Legion during the Great Crusade and the Horus Heresy." }, { level: "master degree", date: "// Feb 2011 - Jun 2014", university: "university name", text: "Leman Russ, also known as the Wolf King and the Great Wolf during his lifetime, is the currently missing Primarch of the Space Wolves Chapter of Space Marines. He led the Space Wolves Legion during the Great Crusade and the Horus Heresy."}]
         - var experienceArr = [{ nameOfCompany: "company name", date: "// Feb 2011 - Jun 2014", vacancy: "your job here", text: "Leman Russ, also known as the Wolf King and the Great Wolf during his lifetime, is the currently missing Primarch of the Space Wolves Chapter of Space Marines. He led the Space Wolves Legion during the Great Crusade and the Horus Heresy.", isFirst: "first" }, { nameOfCompany: "company name", date: "// Feb 2011 - Jun 2014", vacancy: "your job here", text: "Leman Russ, also known as the Wolf King and the Great Wolf during his lifetime, is the currently missing Primarch of the Space Wolves Chapter of Space Marines. He led the Space Wolves Legion during the Great Crusade and the Horus Heresy." }, { nameOfCompany: "company name", date: "// Feb 2011 - Jun 2014", vacancy: "your job here", text: "Leman Russ, also known as the Wolf King and the Great Wolf during his lifetime, is the currently missing Primarch of the Space Wolves Chapter of Space Marines. He led the Space Wolves Legion during the Great Crusade and the Horus Heresy." }]
         - var softwareArr = [{title: "photoshop", val: "95%"}, {title: "dreamweaver", val: "90%"}, {title: "illustrator", val: "80%"}, {title: "after effects", val: "70%"}, {title: "indesign", val: "60%"}, {title: "html&css3", val: "95%"}]
-
-        main.main-content
-            .main-content__buffer.main-content__buffer_left
-            section.main-content__section.main-content__section_left
-                section.main-content__person
-                    +person(personName)
-                section.main-content__profile
-                    +header(headersArr[0])
-                    +profile(profileText)
-                section.main-content__contact
-                    +header(headersArr[1])
-                    +contact(contactsOfPerson)
-                section.main-content__skills
-                    +header(headersArr[2])
-                    .main-content__skills-flex-container
-                        - for (var i = 0; i < skillsArr.length; i += 1) 
-                            +skill(skillsArr[i])
-            .main-content__buffer.main-content__buffer_middle
-            section.main-content__section.main-content__section_right
-                section.main-content__education
-                    +header(headersArr[3])
-                    - for (var i = 0; i < educationArr.length; i += 1)
-                        +education(educationArr[i])
-                section.main-content__experience
-                    +header(headersArr[4])
-                    - for (var i = 0; i < experienceArr.length; i += 1)
-                        +experience(experienceArr[i])
-                section.main-content__software
-                    +header(headersArr[5])
-                    .main-content__software-flex-container
-                        - for (var i = 0; i < softwareArr.length; i += 1)
-                            +software(softwareArr[i])
-            .main-content__buffer.main-content__buffer_right
+        
+        +main-content({personName, headersArr, profileText, contactsOfPerson, skillsArr, educationArr, experienceArr, softwareArr})
+        

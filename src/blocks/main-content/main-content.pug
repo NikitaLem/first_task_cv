@@ -1,0 +1,42 @@
+include ../person/person.pug
+include ../header/header.pug
+include ../profile/profile.pug
+include ../contact/contact.pug
+include ../skill/skill.pug
+include ../education/education.pug
+include ../experience/experience.pug
+include ../software/software.pug
+
+mixin main-content({personName, headersArr, profileText, contactsOfPerson, skillsArr, educationArr, experienceArr, softwareArr})
+    main.main-content
+        .main-content__buffer.main-content__buffer_left
+        section.main-content__section.main-content__section_left
+            section.main-content__person
+                +person(personName)
+            section.main-content__profile
+                +header(headersArr[0])
+                +profile(profileText)
+            section.main-content__contact
+                +header(headersArr[1])
+                +contact(contactsOfPerson)
+            section.main-content__skills
+                +header(headersArr[2])
+                .main-content__skills-flex-container
+                    - for (var i = 0; i < skillsArr.length; i += 1) 
+                        +skill(skillsArr[i])
+        .main-content__buffer.main-content__buffer_middle
+        section.main-content__section.main-content__section_right
+            section.main-content__education
+                +header(headersArr[3])
+                - for (var i = 0; i < educationArr.length; i += 1)
+                    +education(educationArr[i])
+            section.main-content__experience
+                +header(headersArr[4])
+                - for (var i = 0; i < experienceArr.length; i += 1)
+                    +experience(experienceArr[i])
+            section.main-content__software
+                +header(headersArr[5])
+                .main-content__software-flex-container
+                    - for (var i = 0; i < softwareArr.length; i += 1)
+                        +software(softwareArr[i])
+        .main-content__buffer.main-content__buffer_right
