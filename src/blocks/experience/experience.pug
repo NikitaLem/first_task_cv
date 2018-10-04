@@ -1,7 +1,7 @@
 mixin experience({nameOfCompany, date, vacancy, text, isFirst})
     .experience
-        div(class="experience__item experience__item_"+isFirst)
-            .experience__dot
+        .experience__item(class="experience__item_"+isFirst)
+            .experience__pre-symbol
             .experience__wrapper
                 .experience__degree
                     span.experience__name-of-company= nameOfCompany
