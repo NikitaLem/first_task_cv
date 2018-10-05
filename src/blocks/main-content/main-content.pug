@@ -3,8 +3,7 @@ include ../header/header.pug
 include ../profile/profile.pug
 include ../contact/contact.pug
 include ../skill/skill.pug
-include ../education/education.pug
-include ../experience/experience.pug
+include ../information-list/information-list.pug
 include ../software/software.pug
 
 mixin main-content({personName, headersArr, profileText, contactsOfPerson, skillsArr, educationArr, experienceArr, softwareArr})
@@ -28,11 +27,11 @@ mixin main-content({personName, headersArr, profileText, contactsOfPerson, skill
             section.main-content__education
                 +header(headersArr[3])
                 - for (var i = 0; i < educationArr.length; i += 1)
-                    +education(educationArr[i])
+                    +information-list(educationArr[i])
             section.main-content__experience
                 +header(headersArr[4])
                 - for (var i = 0; i < experienceArr.length; i += 1)
-                    +experience(experienceArr[i])
+                    +information-list(experienceArr[i])
             section.main-content__software
                 +header(headersArr[5])
                 .main-content__software-flex-container

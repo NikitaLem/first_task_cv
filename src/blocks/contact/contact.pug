@@ -5,10 +5,10 @@ mixin contact({address, email, phone, website})
             .contact__value= address
         .contact__item
             .contact__name e-mail
-            a(class="contact__value contact__value_link" href="mailto: " + email)= email
+            a(class="contact__value contact__value_link" href=`mailto: ${email}`)= email
         .contact__item
             .contact__name phone
-            a(class="contact__value contact__value_link" href="tel: " + phone)= phone
+            a(class="contact__value contact__value_link" href=`tel: ${phone}`)= phone
         .contact__item
             .contact__name website
             a(class="contact__value contact__value_link" target="_blank"  rel="noopener noreferrer" href= website)= website
