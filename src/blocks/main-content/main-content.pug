@@ -9,7 +9,6 @@ include ../software/software.pug
 
 mixin main-content({personName, headersArr, profileText, contactsOfPerson, skillsArr, educationArr, experienceArr, softwareArr})
     main.main-content
-        .main-content__buffer.main-content__buffer_left
         section.main-content__section.main-content__section_left
             section.main-content__person
                 +person(personName)
@@ -39,4 +38,3 @@ mixin main-content({personName, headersArr, profileText, contactsOfPerson, skill
                 .main-content__software-flex-container
                     - for (var i = 0; i < softwareArr.length; i += 1)
                         +software(softwareArr[i])
-        .main-content__buffer.main-content__buffer_right

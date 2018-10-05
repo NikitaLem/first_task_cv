@@ -13,15 +13,15 @@
     flex-direction column
     margin 0 3% 7.7vw 3%
 
-.main-content__buffer_left
-  flex-basis 5.24vw
-  @media only screen and (min-width: 1650px)
-    flex-basis 35rem
-  @media only screen and (max-width: 768px)
-    display none
-
 .main-content__section_left
   flex-basis 32.98vw
+  margin-left 5.24vw
+  margin-right 3.24vw
+  @media only screen and (min-width: 1650px)
+    margin-left 35rem
+  @media only screen and (max-width: 768px)
+    margin-left 0
+    margin-right 0
 
 .main-content__person
   margin-top 8.3vw
@@ -41,13 +41,15 @@
   align-items center
   margin-top 0.9vw
 
-.main-content__buffer_middle
-  flex-basis 6.49vw
-  @media only screen and (max-width: 768px)
-    display none
-
 .main-content__section_right
   flex-basis 50.65vw
+  margin-right 4.637vw
+  margin-left 3.24vw
+  @media only screen and (min-width: 1650px)
+    margin-right 35rem
+  @media only screen and (max-width: 768px)
+    margin-right 0
+    margin-left 0
 
 .main-content__education
   margin-top 6.45vw
@@ -65,10 +67,3 @@
   grid-column-gap 5.61vw
   grid-row-gap 2.21vw
   margin-top 3.1vw
-
-.main-content__buffer_right
-  flex-basis 4.637vw
-  @media only screen and (min-width: 1650px)
-    flex-basis 35rem
-  @media only screen and (max-width: 768px)
-    display none
