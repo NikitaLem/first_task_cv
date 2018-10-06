@@ -22,10 +22,10 @@ module.exports = {
         loaders: ['shebang', 'babel']
       },
       {
-        test: /\.(woff(2)?|ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,    //to support @font-face rule 
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
         loader: "url-loader",
         query:{
-          limit:'10000',
+          limit: '100000',
           name:'[name].[ext]',
           outputPath:'fonts/'
         }
