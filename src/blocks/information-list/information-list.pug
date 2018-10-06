@@ -1,7 +1,7 @@
 mixin information-list({mainInfo, date, subInfo, text, isFirst, color})
     .information-list
         .information-list__item(class=`information-list__item_${isFirst}`)
-            .information-list__pre-symbol
+            .information-list__list-mark
             .information-list__wrapper
                 .information-list__header-info
                     span.information-list__main-info(style=`color: ${color}`)= mainInfo

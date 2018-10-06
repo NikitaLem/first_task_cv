@@ -6,34 +6,34 @@ include ../skill/skill.pug
 include ../information-list/information-list.pug
 include ../software/software.pug
 
-mixin main-content({personName, headersArr, profileText, contactsOfPerson, skillsArr, educationArr, experienceArr, softwareArr})
+mixin main-content({person, profileText, contactsOfPerson, skillsArr, educationArr, experienceArr, softwareArr})
     main.main-content
         section.main-content__section.main-content__section_left
             section.main-content__person
-                +person(personName)
+                +person(person)
             section.main-content__profile
-                +header(headersArr[0])
+                +header({ title: "profile", imgSrc: "images/profile.png" })
                 +profile(profileText)
             section.main-content__contact
-                +header(headersArr[1])
+                +header({ title: "contact", imgSrc: "images/contact.png" })
                 +contact(contactsOfPerson)
             section.main-content__skills
-                +header(headersArr[2])
+                +header({ title: "skills", imgSrc: "images/skills.png" })
                 .main-content__skills-flex-container
                     - for (var i = 0; i < skillsArr.length; i += 1) 
                         +skill(skillsArr[i])
         .main-content__buffer.main-content__buffer_middle
         section.main-content__section.main-content__section_right
             section.main-content__education
-                +header(headersArr[3])
+                +header({ title: "education", imgSrc: "images/education.png" })
                 - for (var i = 0; i < educationArr.length; i += 1)
                     +information-list(educationArr[i])
             section.main-content__experience
-                +header(headersArr[4])
+                +header({ title: "experience", imgSrc: "images/experience.png" })
                 - for (var i = 0; i < experienceArr.length; i += 1)
                     +information-list(experienceArr[i])
             section.main-content__software
-                +header(headersArr[5])
+                +header({ title: "software", imgSrc: "images/software.png" })
                 .main-content__software-flex-container
                     - for (var i = 0; i < softwareArr.length; i += 1)
                         +software(softwareArr[i])
