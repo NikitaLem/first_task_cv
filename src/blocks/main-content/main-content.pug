@@ -28,12 +28,12 @@ mixin main-content({person, profileText, contactsOfPerson, skillsArr, educationA
                 +header({ title: "education", imgSrc: "images/education.png" })
                 .main-content__education-list-container
                     - for (var i = 0; i < educationArr.length; i += 1)
-                        +information-list(educationArr[i])
+                        +information-list-item(educationArr[i])
             section.main-content__experience
                 +header({ title: "experience", imgSrc: "images/experience.png" })
                 .main-content__experience-list-container
                     - for (var i = 0; i < experienceArr.length; i += 1)
-                        +information-list(experienceArr[i])
+                        +information-list-item(experienceArr[i])
             section.main-content__software
                 +header({ title: "software", imgSrc: "images/software.png" })
                 .main-content__software-item-container
