@@ -20,10 +20,9 @@ mixin main-content({person, profileText, contactsOfPerson, skillsArr, educationA
                     +contact(contactsOfPerson)
             section.main-content__skills
                 +header({ title: "skills", imgSrc: "images/skills.png" })
-                .main-content__skills-flex-container
+                .main-content__skills-item-container
                     - for (var i = 0; i < skillsArr.length; i += 1) 
                         +skill(skillsArr[i])
-        .main-content__buffer.main-content__buffer_middle
         section.main-content__section.main-content__section_right
             section.main-content__education
                 +header({ title: "education", imgSrc: "images/education.png" })
@@ -32,11 +31,11 @@ mixin main-content({person, profileText, contactsOfPerson, skillsArr, educationA
                         +information-list(educationArr[i])
             section.main-content__experience
                 +header({ title: "experience", imgSrc: "images/experience.png" })
-                .main-content__education-list-container
+                .main-content__experience-list-container
                     - for (var i = 0; i < experienceArr.length; i += 1)
                         +information-list(experienceArr[i])
             section.main-content__software
                 +header({ title: "software", imgSrc: "images/software.png" })
-                .main-content__software-flex-container
+                .main-content__software-item-container
                     - for (var i = 0; i < softwareArr.length; i += 1)
                         +software(softwareArr[i])
