@@ -2,6 +2,6 @@ mixin software({title, val})
     .sowtware
         .software__item
             .software__name= title
-            .software__level
-                span(class="software__level_full" style=`width: ${val}`)    
+            .software__level-container
+                span.software__level(style=`width: ${val}`)    
                 span.software__level_empty
