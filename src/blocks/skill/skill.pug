@@ -1,9 +1,8 @@
 mixin skill({title, val, maxVal})
     .skill
-        .skill__item
-            .skill__name= title
-            .skill__value
-                - for(var i = 0; i < val; i++)
-                    .value__circle.value__circle_full
-                - for(var j = 0; j < (maxVal - val); j++)
-                    .value__circle
+        .skill__name= title
+        .skill__value
+            - for(var i = 0; i < val; i++)
+                .value__circle.value__circle_full
+            - for(var j = 0; j < (maxVal - val); j++)
+                .value__circle

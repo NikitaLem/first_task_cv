@@ -20,20 +20,23 @@ mixin main-content({person, profileText, contactsOfPerson, skillsArr, educationA
                     +contact(contactsOfPerson)
             section.main-content__skills
                 +header({ title: "skills", imgSrc: "images/skills.png" })
-                .main-content__skills-item-container
-                    - for (var i = 0; i < skillsArr.length; i += 1) 
-                        +skill(skillsArr[i])
+                .main-content__skills-container
+                    - for (var i = 0; i < skillsArr.length; i += 1)
+                        .main-content__skills-item-container
+                            +skill(skillsArr[i])
         section.main-content__section.main-content__section_right
             section.main-content__education
                 +header({ title: "education", imgSrc: "images/education.png" })
-                .main-content__education-list-container
+                .main-content__information-list-container.main-content__information-list-container_for-education
                     - for (var i = 0; i < educationArr.length; i += 1)
-                        +information-list-item(educationArr[i])
+                        .main-content__information-list-container
+                            +information-list-item(educationArr[i])
             section.main-content__experience
                 +header({ title: "experience", imgSrc: "images/experience.png" })
-                .main-content__experience-list-container
+                .main-content__information-list-container.main-content__information-list-container_for-experience
                     - for (var i = 0; i < experienceArr.length; i += 1)
-                        +information-list-item(experienceArr[i])
+                        .main-content__information-list-container
+                            +information-list-item(experienceArr[i])
             section.main-content__software
                 +header({ title: "software", imgSrc: "images/software.png" })
                 .main-content__software-item-container
