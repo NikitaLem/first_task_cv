@@ -12,15 +12,22 @@
     flex-direction column
     margin 0 3% 7.7vw 3%
 
-  &__section_left
-    flex-basis 32.98vw
-    margin-left 5.24vw
-    margin-right 3.24vw
+  &__section
     @media only screen and (min-width: 1650px)
       margin-left 35rem
     @media only screen and (max-width: 768px)
       margin-left 0
       margin-right 0
+
+    &_left
+      flex-basis 32.98vw
+      margin-left 5.24vw
+      margin-right 3.24vw
+
+    &_right
+      flex-basis 50.65vw
+      margin-left 3.24vw
+      margin-right 4.637vw
 
   &__person
     margin-top 8.3vw
@@ -42,16 +49,6 @@
     flex-direction column
     align-items center
     margin-top 0.9vw
-
-  &__section_right
-    flex-basis 50.65vw
-    margin-right 4.637vw
-    margin-left 3.24vw
-    @media only screen and (min-width: 1650px)
-      margin-right 35rem
-    @media only screen and (max-width: 768px)
-      margin-right 0
-      margin-left 0
 
   &__education
     margin-top 6.45vw
