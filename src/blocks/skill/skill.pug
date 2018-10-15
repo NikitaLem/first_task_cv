@@ -1,6 +1,6 @@
 mixin skill({title, val, maxVal})
     .skill
-        .skill__name= title
+        p.skill__name= title
         .skill__value
             - for(var i = 0; i < val; i++)
                 .value__circle.value__circle_full

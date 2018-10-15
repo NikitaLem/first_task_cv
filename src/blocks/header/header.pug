@@ -1,6 +1,6 @@
 mixin header({title, imgSrc})
-    .header
+    header.header
         .header__image-container
             img(class="header__img" src=imgSrc alt=`image-${title}`)
-        span.header__name= title
+        h2.header__name= title
         .header__line

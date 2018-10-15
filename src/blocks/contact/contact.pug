@@ -1,14 +1,14 @@
 mixin contact({address, email, phone, website})
-    .contact
+    addres.contact
         .contact__item
-            .contact__name address
+            span.contact__name address
             .contact__value= address
         .contact__item
-            .contact__name e-mail
+            span.contact__name e-mail
             a(class="contact__value contact__value_link" href=`mailto: ${email}`)= email
         .contact__item
-            .contact__name phone
+            span.contact__name phone
             a(class="contact__value contact__value_link" href=`tel: ${phone}`)= phone
         .contact__item
-            .contact__name website
+            span.contact__name website
             a(class="contact__value contact__value_link" target="_blank"  rel="noopener noreferrer" href= website)= website
